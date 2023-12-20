@@ -44,7 +44,7 @@
    https://localhost:40443/healthz
    ```
   
-  > **Note:** Don't close the powershell window keep it running up.
+   > **Note:** Don't close the powershell window keep it running up.
 
 1. In the LabVM, click on **Start** search and select for **PowerShell 6**. 
 
