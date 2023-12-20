@@ -1,4 +1,4 @@
-# 10 a Semantic Kernal
+# 10A Semantic Kernal
 
 ## Introduction
 
