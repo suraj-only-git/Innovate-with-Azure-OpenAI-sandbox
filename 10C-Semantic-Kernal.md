@@ -1,4 +1,4 @@
-# 10C C# based notebooks to develop on Semantic Kernal
+# 10-B C# based notebooks to develop on Semantic Kernal
 
 ### Task 1: Setup configuration for Integrating AI
 
