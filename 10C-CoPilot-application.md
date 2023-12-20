@@ -2,7 +2,7 @@
 
 ## Task 1: Deployment of Chat CoPilot application
 
-1. In the LabVM, click on **Start** search and select for **PowerShell 6**. 
+1. In the LabVM, click on **Start**, from the start menu search and select for **PowerShell 6**. 
 
 1. Run the following command to change the path.
 
@@ -46,7 +46,7 @@
   
    > **Note:** Don't close the powershell window keep it running up.
 
-1. In the LabVM, click on **Start** search and select for **PowerShell 6**. 
+1. In the LabVM, click on **Start**, from the start menu search and select for **PowerShell 6**. 
 
 1. Run the following command to change the path.
 
