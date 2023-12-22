@@ -1,4 +1,4 @@
-# Knowledge Mining with Azure Cognitive Search
+# Exercise 9: Knowledge Mining with Azure Cognitive Search
 
 Unlock the potential of knowledge mining with Azure Cognitive Search. Seamlessly organize and extract insights from vast amounts of unstructured data. Leverage AI-powered capabilities to enrich content, enable powerful search experiences, and gain valuable business intelligence. Transform information into actionable knowledge with Azure Cognitive Search's advanced search and analytics features.
 
