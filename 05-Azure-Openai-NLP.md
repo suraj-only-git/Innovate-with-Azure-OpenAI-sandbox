@@ -1,4 +1,4 @@
-# Azure OpenAI + NLP using ChatGPT on SQL Engine
+# Exercise 5: Azure OpenAI + NLP using ChatGPT on SQL Engine
 
 ## Overview
 
