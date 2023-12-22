@@ -1,4 +1,4 @@
-# Fine-tuning an Azure OpenAI Model
+# Exercise 7: Fine-tuning an Azure OpenAI Model
 
 Azure's OpenAI GPT-3.5 Turbo stands out as a robust language model capable of producing text that closely resembles human language. The fine-tuning process is the method of enhancing the model's performance by training it on a particular task or domain. This involves the creation of a sample fine-tuning dataset, preparation of sample training and validation datasets, uploading them for the fine-tuning process, generating a fine-tuning job, and ultimately deploying a custom fine-tuned model.
 
