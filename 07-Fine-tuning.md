@@ -2,6 +2,9 @@
 
 Azure's OpenAI GPT-3.5 Turbo stands out as a robust language model capable of producing text that closely resembles human language. The fine-tuning process is the method of enhancing the model's performance by training it on a particular task or domain. This involves the creation of a sample fine-tuning dataset, preparation of sample training and validation datasets, uploading them for the fine-tuning process, generating a fine-tuning job, and ultimately deploying a custom fine-tuned model.
 
+
+### Task 1: Creating and Fine-Tuning OpenAI GPT Models on Azure
+
 1. Naviagte back to [Azure portal](http://portal.azure.com/), search and select **Azure OpenAI**, from the **Cognitive Services | Azure OpenAI pane**, select the **OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
 1. On **openai-<inject key="DeploymentID" enableCopy="false"/>** blade, select **Keys and Endpoint (1)** under **Resource Management**. Select **Show Keys (2)** Copy **Key 1 (3)** and the **Endpoint (4)** by clicking on copy to clipboard and paste it into a text editor such as Notepad for later use. 
@@ -231,25 +234,107 @@ Azure's OpenAI GPT-3.5 Turbo stands out as a robust language model capable of pr
     print(f'Found {len(response["data"])} fine-tune jobs.')
     ```
 
+   - **Note**: It can take more than an hour to complete training the custom Models, you can continue with the next Exercises. Once custom Models deployment get succeeded you can continue with Task 2
 
+### Task 2: Deploy and Use a customized model
 
+1. From the **labVM**, click on **Start** menu and click on **Powershell** by double-clicking on it.
 
+1. Run the following command to get the **token**.
 
+   ```
+   Connect-AzAccount
+   az account get-access-token
+   ```
 
+1. On the **Sign in to Microsoft Azure** pop-up, you will see the login screen. Enter the following email or username, and click on **Next**. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
    
+      ![](../media/signin-uname.png "Enter Email")
+     
+1. Now enter the following password and click on **Sign in**.
+   
+   * **Password**: <inject key="AzureAdUserPassword"></inject>
+   
+      ![](../media/signin-pword.png "Enter Password")
+
+1. Copy the **accessToken** from the output.  
+
+1.  Run the below command to set **env** variable. Replace `REPLACE_WITH_YOUR_TOKEN_HERE` with `accessToken` copied.
+
+   ```
+   [System.Environment]::SetEnvironmentVariable('TOKEN', 'REPLACE_WITH_YOUR_TOKEN_HERE', 'User')
+   ```
+
+1. Naviagte back to [Azure portal](http://portal.azure.com/), search and select **Azure OpenAI**, from the **Cognitive Services | Azure OpenAI pane**, select the **OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
+
+1. Copy the `Subscription ID`, `Resource Group` name `, and `Azure OpenAI Resource name` and paste these details into the notepad.
+
+1. Navigate to [Azure OpenAI Studio](https://oai.azure.com/), click on **Models** from the left menu under Management, click on **Custom Model** copy the `Model name` paste these details into the notepad.
+
+1. Deploy the fine-tuned model by adding a new cell by clicking on **+ Code**, Copy and paste the following code, and replace the values <YOUR_SUBSCRIPTION_ID> with `Subscription ID`, <YOUR_RESOURCE_GROUP_NAME> with `Resource Group` name`, <YOUR_AZURE_OPENAI_RESOURCE_NAME> with `Azure OpenAI Resource name`, <YOUR_FINE_TUNED_MODEL> with `Custom model name`.
+
+   ```
+   import json
+   import requests
+
+   token= os.getenv("TEMP_AUTH_TOKEN") 
+   subscription = "<YOUR_SUBSCRIPTION_ID>"  
+   resource_group = "<YOUR_RESOURCE_GROUP_NAME>"
+   resource_name = "<YOUR_AZURE_OPENAI_RESOURCE_NAME>"
+   model_deployment_name ="YOUR_CUSTOM_MODEL_DEPLOYMENT_NAME"
+
+   deploy_params = {'api-version': "2023-05-01"} 
+   deploy_headers = {'Authorization': 'Bearer {}'.format(token), 'Content-Type': 'application/json'}
+
+   deploy_data = {
+       "sku": {"name": "standard", "capacity": 1}, 
+       "properties": {
+           "model": {
+               "format": "OpenAI",
+               "name": "<YOUR_FINE_TUNED_MODEL>", #retrieve this value from the previous call, it will look like gpt-35-turbo-0613.ft-b044a9d3cf9c4228b5d393567f693b83
+               "version": "1"
+           }
+       }
+   }
+   deploy_data = json.dumps(deploy_data)
+
+   request_url = f'https://management.azure.com/subscriptions/{subscription}/resourceGroups/{resource_group}/providers/Microsoft.CognitiveServices/accounts/{resource_name}/deployments/{model_deployment_name}'
+
+   print('Creating a new deployment...')
+
+   r = requests.put(request_url, params=deploy_params, headers=deploy_headers, data=deploy_data)
+
+   print(r)
+   print(r.reason)
+   print(r.json()) 
+   ```
+
+1. **Execute the cell** (using either **Ctrl + Enter** to stay on the same cell or **Shift + Enter** to advance to the next cell) and observe the results.
+
+1. Use a deployed customized model by adding a new cell by clicking on **+ Code**, Copy and paste the following code and **Execute the cell** (using either **Ctrl + Enter** to stay on the same cell or **Shift + Enter** to advance to the next cell) and observe the results.
+
+   - After your fine-tuned model is deployed, you can use it like any other deployed model in either the Chat Playground of Azure OpenAI Studio, or via the chat completion API. For example, you can send a chat completion call to your deployed model, as shown in the following Python example. You can continue to use the same parameters with your customized model, such as temperature and max_tokens, as you can with other deployed models.
+
+   ```
+   import os
+   import openai
+   openai.api_type = "azure"
+   openai.api_base = os.getenv("AZURE_OPENAI_ENDPOINT") 
+   openai.api_version = "2023-05-15"
+   openai.api_key = os.getenv("AZURE_OPENAI_KEY")
+
+   response = openai.ChatCompletion.create(
+       engine="gpt-35-turbo-ft", # engine = "Custom deployment name you chose for your fine-tuning model"
+       messages=[
+           {"role": "system", "content": "You are a helpful assistant."},
+           {"role": "user", "content": "Does Azure OpenAI support customer managed keys?"},
+           {"role": "assistant", "content": "Yes, customer managed keys are supported by Azure OpenAI."},
+           {"role": "user", "content": "Do other Azure AI services support this too?"}
+       ]
+   )
+
+   print(response)
+   print(response['choices'][0]['message']['content'])
+   ```
