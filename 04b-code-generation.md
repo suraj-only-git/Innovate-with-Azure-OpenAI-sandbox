@@ -1,4 +1,4 @@
-## Lab 04b: Generate and improve code with Azure OpenAI Service
+## Exercise 04B: Generate and improve code with Azure OpenAI Service
 
 ### Lab scenario
 The Azure OpenAI Service models can generate code for you using natural language prompts, fixing bugs in completed code, and providing code comments. These models can also explain and simplify existing code to help you understand what it does and how to improve it.
