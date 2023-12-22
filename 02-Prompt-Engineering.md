@@ -1,4 +1,4 @@
-# Lab 1: Prompt Engineering practices
+# Exercise 2: Prompt Engineering practices
 
 Master the art of Prompt Engineering with Azure OpenAI Studio. In this exercise, you'll explore the concept of prompt engineering, learning how to craft effective prompts for AI models. You'll get hands-on experience with Azure OpenAI Playground, experimenting with different types of prompts and understanding their elements and design tips.
 
