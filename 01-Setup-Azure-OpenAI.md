@@ -74,6 +74,21 @@ Azure OpenAI provides a web-based portal named **Azure OpenAI Studio**, that you
 
 11. Click on the **Create** button to deploy a model that you will be playing around with as you proceed.
 
+12. In the **Deployments** page, click on **+ Create new deployment**.
+
+      ![](media/openai-lab01_t2_s3.png "Create a new deployment")
+
+13. Within the **Deploy model** pop-up interface, enter the following details and then click on **Advanced options (3)** followed by scaling down the **Tokens per Minute Rate Limit (thousands) (4)**:
+    
+    - **Select a Model**: davinci-002
+    - **Model version**: (Default)
+    - **Deployment name**: davinci-002
+    - **Tokens per Minute Rate Limit (thousands)**: 20K
+  
+      ![](media/.png "Deploy model configurations")
+
+14. Click on the **Create** button to deploy a model that you will be playing around with as you proceed.
+
    > **Note**: Azure OpenAI includes multiple models, each optimized for a different balance of capabilities and performance. In this exercise, you'll use the **GPT-35-Turbo** model, which is a good general model for summarizing and generating natural language and code. For more information about the available models in Azure OpenAI, see [Models](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models) in the Azure OpenAI documentation.
 
 ### Task 3: Explore Azure AI Studio
