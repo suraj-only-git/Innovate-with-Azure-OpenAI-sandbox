@@ -15,14 +15,15 @@ In this exercise, you will create a deployment and model in Azure OpenAI studio 
 3. Create an **Azure OpenAI** resource with the following settings:
    
     - **Subscription**: Default - Pre-assigned subscription.
-    - **Resource group**: Intelligent-apps-<inject key="Deployment ID" enableCopy="false"></inject>
+    - **Resource group**: labvm-rg-<inject key="Deployment ID" enableCopy="false"></inject>
     - **Region**: Select **<inject key="Region" enableCopy="false" />**
     - **Name**: OpenAI-<inject key="Deployment ID" enableCopy="false"></inject>
     - **Pricing tier**: Standard S0
   
-      ![](media/openai-lab01_01.png "Create Azure OpenAI resource")
-
-4. Wait for deployment to complete. Then go to the deployed Azure OpenAI resource in the Azure portal.
+      ![](media/img1.png "Create Azure OpenAI resource")
+      
+4. Keep rest as default and click on Create .
+5. Wait for deployment to complete. Then go to the deployed Azure OpenAI resource in the Azure portal.
 
 ### Task 2: Deploy a model
 
@@ -34,7 +35,7 @@ Azure OpenAI provides a web-based portal named **Azure OpenAI Studio**, that you
 
 2. On **Azure AI Services | Azure OpenAI** blade, select **OpenAI-Lab01-<inject key="Deployment-id" enableCopy="false"></inject>**
 
-   ![](media/OpenAI_select.png)
+   ![](media/img2.png)
 
 3. In the Azure OpenAI resource pane, click on **Go to Azure OpenAI Studio** it will navigate to **Azure AI Studio**.
 
