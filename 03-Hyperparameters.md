@@ -1,4 +1,4 @@
-# Exercise 1: Customizing Azure OpenAI Service Hyperparameters
+# Exercise 3: Customizing Azure OpenAI Service Hyperparameters
 
 To begin exploring Azure OpenAI capabilities using a no-code approach, you can utilize the GPT-3 Playground. This web application features a simple text box where you can enter a prompt and generate a completion. The Playground allows you to easily iterate and experiment with the various capabilities offered by Azure OpenAI.
 
