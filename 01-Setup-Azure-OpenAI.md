@@ -56,7 +56,7 @@ Azure OpenAI provides a web-based portal named **Azure OpenAI Studio**, that you
     - **Deployment name**: gpt-35-turbo
     - **Tokens per Minute Rate Limit (thousands)**: 40K
 
-      ![](media/new-gpt-35.png "Deploy model configurations")
+      ![](media/updateimg4.png "Deploy model configurations")
 
 8. Click on the **Create** button to deploy a model that you will be playing around with as you proceed.
 
