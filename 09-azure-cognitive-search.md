@@ -2,6 +2,19 @@
 
 Unlock the potential of knowledge mining with Azure Cognitive Search. Seamlessly organize and extract insights from vast amounts of unstructured data. Leverage AI-powered capabilities to enrich content, enable powerful search experiences, and gain valuable business intelligence. Transform information into actionable knowledge with Azure Cognitive Search's advanced search and analytics features.
 
+## Lab objectives
+
+In this lab, you will perform:
+
+- Deploy ACS Langchain Python API
+- Deploy ACS Semantic Kernel C# API
+- Building a UI app with Chainlit
+
+## Architecture Diagram
+
+![](media/arch4.PNG)
+
+
 ### Task 1: Provision an Azure AI services
 
 Before you can use Azure AI services, you must provision an Azure AI services resource in your Azure subscription.
