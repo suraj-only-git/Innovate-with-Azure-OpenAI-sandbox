@@ -10,7 +10,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-![](media/arch10b.PNG)
+![](media/arc10b.png)
 
 ### Task 1: Setup configuration for Integrating AI
 
