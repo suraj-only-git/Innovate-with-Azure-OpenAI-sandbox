@@ -13,7 +13,9 @@ In this lab, you will complete the following tasks:
 - Task 2.3: View application code
 - Task 3: Run the app
 
-### Estimated time: 30 minutes
+## Architecture Diagram
+
+  ![](media/lab-05-ad.PNG "Architecture Diagram")
 
 ### Task 1: Explore image generation in the DALL-E playground
 

@@ -11,7 +11,9 @@ In this lab, you will complete the following tasks:
 - Task 3: Configure your application
 - Task 4: Run your application
 
-### Estimated time: 30 minutes
+## Architecture Diagram
+
+  ![](media/lab-04-ad.PNG "Architecture Diagram")
 
 ### Task 1: Generate code in chat playground
 

@@ -2,6 +2,19 @@
 
 Master the art of Prompt Engineering with Azure OpenAI Studio. In this exercise, you'll explore the concept of prompt engineering, learning how to craft effective prompts for AI models. You'll get hands-on experience with Azure OpenAI Playground, experimenting with different types of prompts and understanding their elements and design tips.
 
+## Lab objectives
+
+In this lab, you will perform:
+
+- Provision an Azure OpenAI resource
+- Deploy a model
+- Use Chat Playground to perform various tasks by using examples.
+
+## Architecture Diagram
+
+![](media/arch1.PNG)
+
+
 ### Task 1: German Translation
 
 1. In [Azure OpenAI Studio](https://oai.azure.com/?azure-portal=true), navigate to the **Chat** playground in the left pane.
