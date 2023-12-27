@@ -13,7 +13,7 @@ In this lab, you will complete the following tasks:
 
 ## Architecture Diagram
 
-  ![](media/lab-04-ad.PNG "Architecture Diagram")
+  ![](media/lab-04-ad.png "Architecture Diagram")
 
 ### Task 1: Generate code in chat playground
 
