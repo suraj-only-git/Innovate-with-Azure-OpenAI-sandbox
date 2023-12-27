@@ -1,5 +1,17 @@
 # Exercise 10B: C# based notebooks to develop on Semantic Kernal
 
+## Lab objectives
+
+In this lab, you will perform:
+
+- Provision an Azure OpenAI resource
+- Deploy a model
+- Set up the configuration for Integrating AI to run notebooks in Azure OpenAI API, and OpenAI Packages.
+
+## Architecture Diagram
+
+![](media/arch10b.PNG)
+
 ### Task 1: Setup configuration for Integrating AI
 
 1. Open **Visual Studio Code** from the Lab VM desktop by double-clicking on it.
