@@ -12,7 +12,7 @@ In this lab, you will complete the following tasks:
 
 ## Architecture Diagram
 
-  ![](media/lab-06-ad.PNG "Architecture Diagram")
+  ![](media/lab-06-ad.png "Architecture Diagram")
 
 ## Estimated time: 20 minutes
 
