@@ -71,7 +71,7 @@ Azure OpenAI provides a web-based portal named **Azure OpenAI Studio**, that you
     - **Deployment name**: text-embedding-ada-002
     - **Tokens per Minute Rate Limit (thousands)**: 40K
   
-      ![](media/new-ada-002.png "Deploy model configurations")
+      ![](media/update3.png "Deploy model configurations")
 
 11. Click on the **Create** button to deploy a model that you will be playing around with as you proceed.
 
@@ -86,11 +86,11 @@ Azure OpenAI provides a web-based portal named **Azure OpenAI Studio**, that you
     - **Deployment name**: davinci-002
     - **Tokens per Minute Rate Limit (thousands)**: 20K
   
-      ![](media/.png "Deploy model configurations")
+      ![](media/update2.png "Deploy model configurations")
 
 14. Click on the **Create** button to deploy a model that you will be playing around with as you proceed.
 
-   > **Note**: Azure OpenAI includes multiple models, each optimized for a different balance of capabilities and performance. In this exercise, you'll use the **GPT-35-Turbo** model, which is a good general model for summarizing and generating natural language and code. For more information about the available models in Azure OpenAI, see [Models](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models) in the Azure OpenAI documentation.
+      **Note**: Azure OpenAI includes multiple models, each optimized for a different balance of capabilities and performance. In this exercise, you'll use the **GPT-35-Turbo** model, which is a good general model for summarizing and generating natural language and code. For more information about the available models in Azure OpenAI, see [Models](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models) in the Azure OpenAI documentation.
 
 ### Task 3: Explore Azure AI Studio
 
