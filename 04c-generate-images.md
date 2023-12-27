@@ -15,7 +15,7 @@ In this lab, you will complete the following tasks:
 
 ## Architecture Diagram
 
-  ![](media/lab-05-ad.PNG "Architecture Diagram")
+  ![](media/lab-05-ad.png "Architecture Diagram")
 
 ### Task 1: Explore image generation in the DALL-E playground
 
