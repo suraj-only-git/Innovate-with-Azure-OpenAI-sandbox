@@ -12,7 +12,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-![](media/arch4a.PNG)
+![](media/arc4a.png)
 
 ### Task 1: Setup configuration for Integrating AI
 
