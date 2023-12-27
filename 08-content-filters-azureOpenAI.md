@@ -11,6 +11,10 @@ In this lab, you will complete the following tasks:
 - Task 1: Generate natural language output
 - Task 2: Explore content filters
 
+## Architecture Diagram
+
+  ![](media/lab-07-ad.PNG "Architecture Diagram")
+
 ## Estimated time: 30 minutes
 
 ### Task 3: Generate natural language output
