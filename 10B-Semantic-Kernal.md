@@ -1,4 +1,4 @@
-# Exercise 10B: C# based notebooks to develop on Semantic Kernal
+# Exercise 9B: C# based notebooks to develop on Semantic Kernal
 
 ## Lab objectives
 
