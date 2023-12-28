@@ -52,18 +52,6 @@ Before you can use Azure AI services, you must provision an Azure AI services re
 
      ![](media/ai-search-key.png)
 
-1. In **Finish setting up Docker Desktop**, select **Use recommended settings (requires administrator password)**, and click on **Finish**. 
-
-     ![](media/docker-fininsh.png)
-
-1. In the **Welcome to Docker Desktop** window, click on **Continue without signing in**.
-
-     ![](media/docker-signin.png)
-
-1. In the **Tell us about the work you do** window, click on **Skip**.
-
-     ![](media/docker-skip.png)
-
 ### Task 2: Setup configuration for AI Orchestration
 
 1. Open **Visual Studio Code** from the Lab VM desktop by double-clicking on it.
