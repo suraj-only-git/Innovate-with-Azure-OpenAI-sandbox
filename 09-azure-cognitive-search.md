@@ -6,9 +6,10 @@ Unlock the potential of knowledge mining with Azure Cognitive Search. Seamlessly
 
 In this lab, you will perform:
 
-- Deploy ACS Langchain Python API
-- Deploy ACS Semantic Kernel C# API
-- Building a UI app with Chainlit
+- Provision an Azure OpenAI resource
+- Deploy a model
+- Provision an Azure AI service
+- Set up the configuration for AI Orchestration and perform various tasks related to ACS.
 
 ## Architecture Diagram
 
@@ -146,3 +147,7 @@ In this task, we'll walk through using one of Azure's vector stores, Azure Cogni
    > **Note**: Make sure **Python Environmen** is in a ready State, If not please wait for 15 to 20 seconds.
 
       ![](media/sk-python-first.png)  
+
+### Review
+
+In this lab, you have provisioned an Azure OpenAI resource, deployed a model, set up the configuration for AI Orchestration, and performed various tasks related to ACS.
