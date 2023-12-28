@@ -21,7 +21,7 @@ The chatbot benefits from OpenAI's language understanding, Azure Cognitive Servi
 
 ## About the Sandbox
 
-Using this environment, You'll be able to explore complete features and offerings offered by Microsoft Sentinel. Please find the detailed overview of the sandbox environment below.
+Using this environment, You'll be able to explore complete features and offerings offered by Innovate with Azure OpenAI. Please find the detailed overview of the sandbox environment below.
 
 ### Pre-provisioned resources
 
