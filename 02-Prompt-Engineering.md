@@ -12,8 +12,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-![](media/arch1.PNG)
-
+   ![](media/arch1.png)
 
 ### Task 1: German Translation
 

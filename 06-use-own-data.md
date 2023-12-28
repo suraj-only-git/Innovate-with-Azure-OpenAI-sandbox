@@ -10,6 +10,10 @@ In this lab, you will complete the following tasks:
 - Task 2: Connect your data in the chat playground
 - Task 3: Chat with a model grounded in your data
 
+## Architecture Diagram
+
+  ![](media/lab-06-ad.png "Architecture Diagram")
+
 ## Estimated time: 20 minutes
 
 ### Task 1: Observe normal chat behavior without adding your own data

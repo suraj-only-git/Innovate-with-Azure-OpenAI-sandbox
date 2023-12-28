@@ -8,11 +8,11 @@ In this lab, you will perform:
 
 - Provision an Azure OpenAI resource
 - Deploy a model
-- Set up the configuration for Integrating AI to run notebooks in Azure OpenAI API, OpenAI Packages, and Semantic Kernel.
+- Set up the configuration for Integrating AI to run notebooks in Azure OpenAI API, and OpenAI Packages.
 
 ## Architecture Diagram
 
-![](media/arch2.PNG)
+![](media/arc4a.png)
 
 ### Task 1: Setup configuration for Integrating AI
 
