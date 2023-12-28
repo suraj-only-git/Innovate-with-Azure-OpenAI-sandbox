@@ -1,4 +1,4 @@
-# Exercise 10C: Deploy a Chat CoPilot application based on Semantic Kernal
+# Exercise 9C: Deploy a Chat CoPilot application based on Semantic Kernal
 
 ## Task 1: Deployment of Chat CoPilot application
 
