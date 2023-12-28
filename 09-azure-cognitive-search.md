@@ -12,7 +12,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-   ![](media/arch4.png)
+   ![](media/arc9.png)
 
 ### Task 1: Provision an Azure AI services
 
