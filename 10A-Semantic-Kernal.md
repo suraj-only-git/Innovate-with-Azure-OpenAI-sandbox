@@ -1,4 +1,4 @@
-# Exercise 10A: Semantic Kernal
+# Exercise 9A: Semantic Kernal
 
 ## Introduction
 
