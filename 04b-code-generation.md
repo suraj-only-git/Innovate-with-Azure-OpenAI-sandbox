@@ -66,9 +66,9 @@ To show how to integrate with an Azure OpenAI model, we'll use a short command-l
     - **Subscription**: Default- Choose the only existing subscription assigned for this lab (1).
     - **CloudShell region**: East US (2)
     - **Resource group**: Select **Use existing**.(3)
-      - openai-<inject key="Deployment-id" enableCopy="false"></inject>
+      - openai-<inject key="Deployment ID" enableCopy="false"></inject>
     - **Storage account**: Select **Create new**.(4)
-      - storage<inject key="Deployment-id" enableCopy="false"></inject>
+      - storage<inject key="Deployment ID" enableCopy="false"></inject>
     - **File share**: Create a new file share named **none** (5)
     - Click **Create Storage** (6)
 
