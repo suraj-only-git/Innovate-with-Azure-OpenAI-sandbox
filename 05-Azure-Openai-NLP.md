@@ -20,7 +20,7 @@ In this exercise, you will be setting up the Open AI resource and installation o
 
 1. Now select **Keys and Endpoints** **(1)** under Resource Management and click on **Show Keys** **(2)**. Copy the **KEY 1** **(3)** and **Language APIs Endpoint** **(4)**, and store them in a text file for later use.
 
-   ![](media/z-a02.png)
+   ![](media/update4.png)
       
 ### Task 2: Deploy the application to Azure
 
