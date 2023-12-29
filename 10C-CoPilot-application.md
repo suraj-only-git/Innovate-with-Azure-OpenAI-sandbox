@@ -70,6 +70,10 @@
 
    > **Note:** It may take a few minutes for Yarn packages to install on the first run.
 
-1. Once the deployment of script is executed succeddedfully it will redirect to `http://localhost:3000/` Chat CoPilot in **Edge** browser. 
+1. Once the deployment of script is executed succeddedfully it will redirect to `http://localhost:3000/` Chat CoPilot in **Edge** browser.
+
+      ![](media/resultPS.png)
 
 1. Now **Chat Copilot** application is ready to use you can ask any question Chat Copilot will response accoundingly.
+
+      ![](media/resultcopilot.png)
