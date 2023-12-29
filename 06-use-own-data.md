@@ -59,7 +59,7 @@ Next, add your data in the chat playground to see how it responds with your data
     - **Location**:Select <inject key="Region" enableCopy="false" />
     - **Pricing tier**: Basic
 
-    ![](media/openai-lab06_t4_s5.png "Create cognitive search resource")
+    ![](media/img13.png "Create cognitive search resource")
 
 1. Wait until your search resource has been deployed, then switch back to the Azure AI Studio and refresh the page.
 1. In the **Add data**, enter the following values for your data source and then click on **Next**.
