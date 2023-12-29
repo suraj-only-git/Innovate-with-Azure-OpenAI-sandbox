@@ -49,7 +49,7 @@ Next, add your data in the chat playground to see how it responds with your data
     - **Region**: Select <inject key="Region" enableCopy="false" />
     - **Redundancy**: Locally-redundant storage (LRS)
   
-    ![](media/openai-lab06_t4_s4.png "Create storage account")
+    ![](media/img12.png "Create storage account")
 
 1. Once the resource is being created, come back to Azure OpenAI Studio and select **Create a new Azure Cognitive Search resource** with the following settings. Anything not specified leave as the default.
 
