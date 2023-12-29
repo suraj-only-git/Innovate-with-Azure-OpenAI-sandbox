@@ -44,7 +44,7 @@ Next, add your data in the chat playground to see how it responds with your data
 1. You'll need to create a storage account and Azure Cognitive Search resource. Under the dropdown for the storage resource, select **Create a new Azure Blob storage resource**, and create a storage account with the following settings. Anything not specified leave as the default.
 
     - **Subscription**: Default - Pre-assigned subscription
-    - **Resource group**: openai-<inject key="Deployment ID" enableCopy="false"></inject>
+    - **Resource group**: labvm-rg-<inject key="Deployment ID" enableCopy="false"></inject>
     - **Storage account name**: storage<inject key="Deployment ID" enableCopy="false"></inject>
     - **Region**: Select <inject key="Region" enableCopy="false" />
     - **Redundancy**: Locally-redundant storage (LRS)
