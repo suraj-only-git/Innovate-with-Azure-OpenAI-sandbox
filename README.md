@@ -47,7 +47,7 @@ Using this environment, You'll be able to explore complete features and offering
 
 #### **Duration and Deletion of sandbox**:  
 
-- The sandbox environment will be active for **14 days/730** hours from the time of registration. 
+- The sandbox environment will be active for **14 days/336** hours from the time of registration. 
 - The allowed uptime of the virtual machine is **40 hours**.
 - The virtual machines will automatically **shut down** if not in use or if virtual machines are left idle. This feature is enabled in virtual machines to minimize the Azure spend.
 - when 100% of Azure credits are spent, the sandbox environment will get automatically deleted without any prior notification. To retain the environment for a longer period and to get the most out of the environment, please follow the best practices mentioned below.
