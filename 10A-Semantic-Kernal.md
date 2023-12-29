@@ -40,7 +40,7 @@ In this lab, you will perform:
 
      ![](media/img001.png )
 
-7. Click on **.env.example** file, replace the values and save the file by pressing **ctrl+s** while renaming it as **.env**.
+7. Click on **.env.example** file, replace the values and save the file by pressing **ctrl+s** and **rename file** name as **.env**.
 
    | **Variables**                            | **Values**                                          |
    | ---------------------------------------- |-----------------------------------------------------|
