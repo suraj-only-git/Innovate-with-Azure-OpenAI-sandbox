@@ -56,8 +56,12 @@
                 "Order": 13
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/10C-CoPilot-application.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/10C-CoPilot-application.md
                 "Order": 14
+            },
+            {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/10C-CoPilot-application.md",
+                "Order": 15
             }
         ]
     }

@@ -33,7 +33,7 @@ Azure OpenAI provides a web-based portal named **Azure OpenAI Studio**, that you
 
    ![](media/openai8.png)
 
-2. On **Azure AI Services | Azure OpenAI** blade, select **OpenAI-Lab01-<inject key="Deployment-id" enableCopy="false"></inject>**
+2. On **Azure AI Services | Azure OpenAI** blade, select **OpenAI-<inject key="Deployment ID" enableCopy="false"></inject>**
 
    ![](media/img2.png)
 

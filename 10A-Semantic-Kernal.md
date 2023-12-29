@@ -1,4 +1,4 @@
-# Exercise 10A: Semantic Kernal
+# Exercise 9A: Semantic Kernal
 
 ## Introduction
 
@@ -6,7 +6,20 @@ In the prior, you effectively deployed models within the Azure OpenAI service. N
 
 The open-source Semantic Kernel streamlines the amalgamation of AI services, including OpenAI, Azure OpenAI, and Hugging Face, into traditional programming languages like C# and Python.
 
+## Lab objectives
+
+In this lab, you will perform:
+
+- Dynamically generating the prompt using complex rules at runtime
+- Writing prompts by editing Python code instead of TXT files.
+- Easily creating demos, like this document
+
+## Architecture Diagram
+
+   ![](media/arc10b.png)
+
 ### Task: Setup configuration for Semantic Kernel
+
 1. Open **Visual Studio Code** from the Lab VM desktop by double-clicking on it.
 
 2. In Visual Studio Code from menu bar select **File(1)>open folder(2)**.

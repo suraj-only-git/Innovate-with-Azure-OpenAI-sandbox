@@ -90,4 +90,7 @@ In this task, we'll show how to interact with the Azure OpenAI API using the Ope
    > **Note**: Make sure **Python Environmen** is in ready State, If not please wait for 15 to 20 seconds.
 
       ![](media/openai-02-firstshell.png)
-   
+
+### Review
+
+In this lab, you have provisioned an Azure OpenAI resource, deployed a model, and set up configuration for integrating AI to run notebooks in Azure OpenAI API, OpenAI Packages.
