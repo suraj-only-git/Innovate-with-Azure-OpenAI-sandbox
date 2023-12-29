@@ -54,7 +54,7 @@ Next, add your data in the chat playground to see how it responds with your data
 1. Once the resource is being created, come back to Azure OpenAI Studio and select **Create a new Azure Cognitive Search resource** with the following settings. Anything not specified leave as the default.
 
     - **Subscription**: Default - Pre-assigned subscription
-    - **Resource group**: openai-<inject key="Deployment ID" enableCopy="false"></inject>
+    - **Resource group**: labvm-rg-<inject key="Deployment ID" enableCopy="false"></inject>
     - **Service name**: cognitive-search-<inject key="Deployment ID" enableCopy="false"></inject>
     - **Location**:Select <inject key="Region" enableCopy="false" />
     - **Pricing tier**: Basic
