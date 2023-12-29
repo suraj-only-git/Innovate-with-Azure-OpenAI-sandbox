@@ -60,7 +60,7 @@ In this lab, you will perform:
 
 3. **Execute the notebook cell by cell** (using either Ctrl + Enter to stay on the same cell or Shift + Enter to advance to the next cell) and observe the **results of each cell** execution.
 
-      **Note :** Ececute the Notebook from **Option 2: using Azure OpenAI** as in above task we have added AZURE OPENAI datas.
+      **Note :** Execute the Notebook from **Option 2: using Azure OpenAI** as in above task we have added AZURE OPENAI datas.
 
       ![](media/opt2.png) 
    
