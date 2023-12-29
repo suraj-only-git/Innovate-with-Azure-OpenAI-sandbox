@@ -1,7 +1,19 @@
 # Exercise 5: Azure OpenAI + NLP using ChatGPT on SQL Engine
 
-## Overview
+## Lab scenario
 
+Leverage Azure SQL Database alongside OpenAI ChatGPT for a streamlined NLP application. Set up an Azure Function/Web App to manage SQL interactions, secure API keys from OpenAI, and integrate ChatGPT for natural language understanding. Convert user queries into SQL, execute against Azure SQL Database, and handle results. Emphasize robust security practices for handling sensitive data, conduct thorough testing, iterate for precision, and adhere to terms and pricing. Stay current with Azure and OpenAI documentation for any updates or modifications.
+
+### Lab objectives
+In this lab, you will complete the following tasks:
+
+- Exercise 1: Open AI Setup and Installation of Application
+   - Task 1: Review Open AI resource
+   - Task 2: Deploy the application to Azure
+- Exercise 2: Quick Start With Hosted Demo Application.
+   - Task 1: Analyzing Data Analysis Assistant and SQL Query Writing Assistant
+
+## Overview
 This application demonstrates the of Open AI (ChatGPT/GPT-4) to help answer business questions by performing advanced data analytic tasks on a business database. Examples of questions are:
 
  * Simple: Show me daily revenue trends in 2016 per region
@@ -18,9 +30,9 @@ In this exercise, you will be setting up the Open AI resource and installation o
 
 1. Naviagte back to [Azure portal](http://portal.azure.com/), search and select **Azure OpenAI**, from the **Azure AI Services | Azure OpenAI pane**, select the **OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
-1. Now select **Keys and Endpoints** **(1)** under Resource Management and click on **Show Keys** **(2)**. Copy the **KEY 1** **(3)** and **Language APIs Endpoint** **(4)**, and store them in a text file for later use.
+1. Now select **Keys and Endpoints** **(1)** under Resource Management and click on **Show Keys** **(2)**. Copy the **KEY 1** **(3)** and **Endpoint** **(4)**, and store them in a text file for later use.
 
-   ![](media/z-a02.png)
+   ![](media/update4.png)
       
 ### Task 2: Deploy the application to Azure
 
