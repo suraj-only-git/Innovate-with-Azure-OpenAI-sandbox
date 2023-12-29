@@ -15,13 +15,11 @@ OpenAI's powerful language models like GPT-3 through API calls with Azure servic
 
 ## Sandbox Scenario
 
-In this innovative scenario, Azure OpenAI Hub emerges as a collaborative platform that seamlessly integrates the strengths of Microsoft Azure and OpenAI for advanced natural language processing applications. The platform features a unified API gateway, allowing developers easy access to OpenAI's language models through Azure services, coupled with a user-friendly SDK for streamlined implementation. With robust security protocols aligned with Azure standards and scalable infrastructure, developers can leverage this unified solution to build sophisticated applications, such as an intelligent chatbot for customer support. 
-
-The chatbot benefits from OpenAI's language understanding, Azure Cognitive Services for rich responses, and scalable performance, ensuring a secure and dynamic user experience. Continuous updates from Azure and OpenAI contribute to the platform's evolution, fostering a dynamic ecosystem for the development of cutting-edge language-centric applications.
+Contoso Corporation revolutionized its engineering practices by synergizing Microsoft Azure and OpenAI. They tailored Azure OpenAI service hyperparameters, optimizing AI models for data analytics and task automation. The company programmatically harnessed Azure OpenAI's capabilities, utilizing Python to interact with APIs, generating and refining code. This extended to generating images with a DALL-E model, showcasing versatility in both text and visual domains. Contoso delved into natural language processing (NLP) by integrating ChatGPT on SQL Engine through Azure OpenAI, enhancing data analysis and insights extraction. Leveraging their own data and exploring content filters, Contoso personalized AI applications. They adopted knowledge mining with Azure Cognitive Search, extracting valuable insights from extensive datasets. Building their own Copilot, including a semantic kernel and deploying a Chat Copilot application, reflected Contoso's commitment to advanced, integrated AI-driven development practices.
 
 ## About the Sandbox
 
-Using this environment, You'll be able to explore complete features and offerings offered by Innovate with Azure OpenAI. Please find the detailed overview of the sandbox environment below.
+Using this environment, You'll be able to explore complete features and offerings offered by Azure OpenAI. Please find the detailed overview of the sandbox environment below.
 
 ### Pre-provisioned resources
 
@@ -29,17 +27,17 @@ Using this environment, You'll be able to explore complete features and offering
 
 - 1 *Windows Server 2022 Datacenter* Virtual machines, virtual machine-related resources like Virtual networks, Network security groups, managed disks, Network interface cards, and IP addresses are deployed as part of the automation.
 
-  You are recommended to use the same virtual machine throughout the lab for the best experience through out the lab.
+  You are recommended to use the same virtual machine throughout the lab for the best experience throughout the lab.
 
 #### **License and subscription**: 
 
 - You'll have access to a pre-configured Microsoft user account with an active Azure subscription, and a tenant assigned to the user. 
    
-  User account has assigned as Owner at subscription and Global administrator at the tenant level. You need to use the same user account throughout the lab to get the most out of the lab. 
+  The user account has been assigned as Owner at subscription. You need to use the same user account throughout the lab to get the most out of the lab. 
 
 #### **Azure Credits**: 
 
-- You have been given a quota of **$83 USD** which includes the running cost of Pre-deployed resources, license cost, and other resources deployed while running through the lab.
+- You have been given a quota of **$90 USD** which includes the running cost of Pre-deployed resources, license cost, and other resources deployed while running through the lab.
 
   You will receive **cost alerts** to your registered email address at **50%/75%/90%/95%/100%** of the allotted Azure Credit is spent.
 
@@ -49,16 +47,16 @@ Using this environment, You'll be able to explore complete features and offering
 
 #### **Duration and Deletion of sandbox**:  
 
-- The sandbox environment will be active for **30 days/730** hours from the time of registration. 
+- The sandbox environment will be active for **14 days/730** hours from the time of registration. 
 - The allowed uptime of the virtual machine is **40 hours**.
 - The virtual machines will automatically **shut down** if not in use or if virtual machines are left idle. This feature is enabled in virtual machines to minimize the Azure spend.
 - when 100% of Azure credits are spent, the sandbox environment will get automatically deleted without any prior notification. To retain the environment for a longer period and to get the most out of the environment, please follow the best practices mentioned below.
 
 #### **Best practices**: 
 
-- **Resources usage**: Please stop the virtual machines and other resources when not in use in order to minimize the Azure spend.
+- **Resources usage**: Please stop the virtual machines and other resources when not in use to minimize the Azure spend.
 
-- **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription oftenly in check the Azure spend so that enviornment for a longer duration of time.
+- **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription often in check the Azure spend so that environment for a longer duration of time.
 
 - **Alert notifications**: Make sure to check your registered email's inbox for any alert-related mails. Alerts give you can head start to keep your Azure spending in control and to plan out the remaining credits in the best way possible.
 
