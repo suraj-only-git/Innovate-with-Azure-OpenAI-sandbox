@@ -4,60 +4,64 @@
         "Language": "English",
         "Files": [
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/01-Setup-Azure-OpenAI.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/Overview.md",
                 "Order": 1
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/02-Prompt-Engineering.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/Gettingstarted.md",
                 "Order": 2
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/03-Hyperparameters.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/01-Setup-Azure-OpenAI.md",
                 "Order": 3
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/04a-Azure-OpenAI-APIs.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/02-Prompt-Engineering.md",
                 "Order": 4
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/04b-code-generation.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/03-Hyperparameters.md",
                 "Order": 5
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/04c-generate-images.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/04a-Azure-OpenAI-APIs.md",
                 "Order": 6
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/05-Azure-Openai-NLP.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/04b-code-generation.md",
                 "Order": 7
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/06-use-own-data.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/04c-generate-images.md",
                 "Order": 8
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/07-Fine-tuning.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/05-Azure-Openai-NLP.md",
                 "Order": 9
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/08-content-filters-azureOpenAI.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/06-use-own-data.md",
                 "Order": 10
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/09-azure-cognitive-search.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/08-content-filters-azureOpenAI.md",
                 "Order": 11
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/10A-Semantic-Kernal.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/09-azure-cognitive-search.md",
                 "Order": 12
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/10B-Semantic-Kernal.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/10A-Semantic-Kernal.md",
                 "Order": 13
             },
             {
-                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/10C-CoPilot-application.md",
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/10B-Semantic-Kernal.md",
                 "Order": 14
+            },
+            {
+                "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/Innovate-with-Azure-OpenAI-sandbox/main/10C-CoPilot-application.md",
+                "Order": 15
             }
         ]
     }
