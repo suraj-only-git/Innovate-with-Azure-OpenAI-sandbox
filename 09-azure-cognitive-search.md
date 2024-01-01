@@ -30,24 +30,25 @@ Before you can use Azure AI services, you must provision an Azure AI services re
 1. Create a **search service**, resource with the following settings and click on **Review + Create**:
    
     - **Subscription**: Default - Pre-assigned subscription.
-    - **Resource group**: Intelligent-apps-<inject key="Deployment ID" enableCopy="false"></inject>
+    - **Resource group**: labvm-rg-<inject key="Deployment ID" enableCopy="false"></inject>
     - **Region**: Select <inject key="Region" enableCopy="false" />
     - **Name**: cognitive-search-service-<inject key="Deployment ID" enableCopy="false"></inject>
     - **Pricing tier**: Basic
 
-     ![](media/ai-search-basic.png)
+     ![](media/img14.png)
 
 1. In the **Review + Create**, click on **Create**.
 
-     ![](media/ai-search-create.png)
+     ![](media/img15.png)
 
 1. Once the deployment has succeeded, click on **Go To Resources**.
 
-     ![](media/ai-search-go-to-resource.png)
+     ![](media/img18.png)
 
 1. In the overview page of **cognitive-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** Search Service copy the **Url**  and paste the values it a Notepad we need this value in the future exercise.
 
-     ![](media/ai-search-url.png)
+     ![](media/img17.png)
+   
 
 1. In the **cognitive-search-service-<inject key="Deployment ID" enableCopy="false"></inject>**, click on **Keys** under Setting from the left menu, copy the **Primary admin key**, and paste the values it a Notepad we need this value in the future exercise.
 

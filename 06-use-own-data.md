@@ -44,22 +44,22 @@ Next, add your data in the chat playground to see how it responds with your data
 1. You'll need to create a storage account and Azure Cognitive Search resource. Under the dropdown for the storage resource, select **Create a new Azure Blob storage resource**, and create a storage account with the following settings. Anything not specified leave as the default.
 
     - **Subscription**: Default - Pre-assigned subscription
-    - **Resource group**: openai-<inject key="Deployment ID" enableCopy="false"></inject>
+    - **Resource group**: labvm-rg-<inject key="Deployment ID" enableCopy="false"></inject>
     - **Storage account name**: storage<inject key="Deployment ID" enableCopy="false"></inject>
     - **Region**: Select <inject key="Region" enableCopy="false" />
     - **Redundancy**: Locally-redundant storage (LRS)
   
-    ![](media/openai-lab06_t4_s4.png "Create storage account")
+    ![](media/img12.png "Create storage account")
 
 1. Once the resource is being created, come back to Azure OpenAI Studio and select **Create a new Azure Cognitive Search resource** with the following settings. Anything not specified leave as the default.
 
     - **Subscription**: Default - Pre-assigned subscription
-    - **Resource group**: openai-<inject key="Deployment ID" enableCopy="false"></inject>
+    - **Resource group**: labvm-rg-<inject key="Deployment ID" enableCopy="false"></inject>
     - **Service name**: cognitive-search-<inject key="Deployment ID" enableCopy="false"></inject>
     - **Location**:Select <inject key="Region" enableCopy="false" />
     - **Pricing tier**: Basic
 
-    ![](media/openai-lab06_t4_s5.png "Create cognitive search resource")
+    ![](media/img13.png "Create cognitive search resource")
 
 1. Wait until your search resource has been deployed, then switch back to the Azure AI Studio and refresh the page.
 1. In the **Add data**, enter the following values for your data source and then click on **Next**.
