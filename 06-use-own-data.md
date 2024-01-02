@@ -106,4 +106,4 @@ Try asking it about other cities included in the grounding data, which are Dubai
 In this lab, you have accomplished the following:
 -   Use the power of OpenAI models to generate responses limited to custom ingested data.
 
-## Proceed 
+## Proceed to Exercise 7
