@@ -15,7 +15,7 @@ In this exercise, you will create a deployment and model in Azure OpenAI studio 
 3. Create an **Azure OpenAI** resource with the following settings:
    
     - **Subscription**: Default - Pre-assigned subscription.
-    - **Resource group**: labvm-rg-<inject key="Deployment ID" enableCopy="false"></inject>
+    - **Resource group**: OpenAI
     - **Region**: Select **<inject key="Region" enableCopy="false" />**
     - **Name**: OpenAI-<inject key="Deployment ID" enableCopy="false"></inject>
     - **Pricing tier**: Standard S0
