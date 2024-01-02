@@ -2,6 +2,8 @@
 
 To begin exploring Azure OpenAI capabilities using a no-code approach, you can utilize the GPT-3 Playground. This web application features a simple text box where you can enter a prompt and generate a completion. The Playground allows you to easily iterate and experiment with the various capabilities offered by Azure OpenAI.
 
+>**Note:** Please be aware that the generated output may differ from the example provided in the lab guide.
+
 ## Basic Overview of Azure OpenAI Service Hyperparameters
 
 ## Quick Note on adjusting Hyperparameters
@@ -300,7 +302,6 @@ Prompt engineering in NLP is the process of creating questions or prompts to hel
 natural language. It involves creating questions or statements that can be used to prompt a computer to generate
 a response in natural language.
 ```
->**Note:** The output generated may vary from the depicted text.
 >**Note:** If you get random outputs then try increasing the **Temperature** from the right pane under parameters.
 
 It's not clear from the prompt above how many sentences to use, what style we need things output in, or what we intend to take away from the output. You might get passable responses with the above prompt; the better prompt would be very specific, concise, and to the point. Something like:
