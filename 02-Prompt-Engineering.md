@@ -18,7 +18,7 @@ In this lab, you will perform:
 
 1. In [Azure OpenAI Studio](https://oai.azure.com/?azure-portal=true), navigate to the **Chat** playground in the left pane.
 
-1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save**.
+1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save changes**.
 
    ```
    You are an AI assistant designed to assist with German translation.
@@ -30,7 +30,7 @@ In this lab, you will perform:
 
    ![](media/Continue.png "Continue")
 
-1. In the **Chat session** section, enter the following prompt and press **Enter**.
+1. Scroll down and in the **Chat session** section, enter the following prompt and press **Enter**.
 
    ```
    I was enjoying the sun, but then a huge cloud came and covered the sky.
@@ -42,11 +42,11 @@ In this lab, you will perform:
 
    ![](media/german-chatsession-output.png "chat-session question")
 
-   > **Note**: Chat may not respond with the exact output as shown in the screenshots.
+   > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
 ### Task 2: Negation
 
-1. In the **Assistant setup** section at the top, enter the following as the system message.
+1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save changes**.
 
    ```
    You are an AI assistant that helps to negate the given sentence.
@@ -62,7 +62,7 @@ In this lab, you will perform:
 
    ![](media/negation-assisstant-output.png "chat-session question")
 
-   > **Note**: Chat may not respond with the exact output as shown in the screenshots.   
+   >**Note:** Chat may not respond with the exact output as shown in the screenshots.   
 
 ### Task 3: Classification
 
@@ -72,7 +72,7 @@ In this lab, you will perform:
    You are an AI assistant that helps people to Classification the statement
    ```
 
-1. In the **Assistant setup** section near the system message, select the **Add an example** button. Add the following example and Click on **Save**.
+1. In the **Assistant setup** section near the system message, select the **Add an example** button. Add the following example and Click on **Save changes**.
 
     **User:**
 
@@ -98,7 +98,7 @@ In this lab, you will perform:
 
    ![](media/Classification-output.png "chat-session question")
 
-   > **Note**: Chat may not respond with the exact output as shown in the screenshots.
+   > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
 ### Task 4: E-Mail Summarization 
 
@@ -118,17 +118,17 @@ In this lab, you will perform:
     Action Items: XYZ 
     ```
   
-1. In the **Chat session** section, navigate to the following link from the following link same sample mail [sample mail](https://news.microsoft.com/2022/01/18/satya-nadella-email-to-employees-bringing-the-joy-and-community-of-gaming-to-everyone/) copy paste the sample mail-in the prompt and press **Enter**.
+1. Copy the following link in the browser in the Lab VM  sample mail [sample mail](https://news.microsoft.com/2022/01/18/satya-nadella-email-to-employees-bringing-the-joy-and-community-of-gaming-to-everyone/) copy paste the sample mail-in the chat prompt in the OpenAI studio window and press **Enter**.
   
 1. The model will likely respond with an answer to satisfy the prompt.
 
    ![](media/email-output.png "chat-session question")
 
-   > **Note**: Chat may not respond with the exact output as shown in the screenshots.
+   > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
 ### Task 5: Rewriting
 
-1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save**.
+1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save changes**.
 
    ```
    You are an AI assistant that helps to change the perspective from first-person to third-person 
@@ -144,27 +144,28 @@ In this lab, you will perform:
 
    ![](media/rewrite-output.png "chat-session question")
 
-   > **Note**: Chat may not respond with the exact output as shown in the screenshots.
+   > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
 ### Task 6: Multiple Tasks
 
-1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save**.
+1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save changes**.
 
    ```
    You are an AI assistant that helps to provide three variations of the given text: one translated into German, one with the negation of the original meaning in English, and one with the perspective changed from first-person to third-person in a structured format. 
    ```
+  >**Note:** Erase the example that you had entered in the previous task and click on **Save changes**. 
 
 1. In the **Chat session** section, enter the following prompt and press **Enter**.
 
    ```
    I was enjoying the sun, but then a huge cloud came and covered the sky.
    ```
-  
+   
 1. The model will likely respond with an answer to satisfy the prompt.
 
    ![](media/multitask-output.png "chat-session question")
 
-   > **Note**: Chat may not respond with the exact output as shown in the screenshots.
+   > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
 ### Task 7: Data extraction to JSON
 
@@ -174,7 +175,7 @@ In this lab, you will perform:
    You are an AI assistant that helps extract relevant information from the provided text and organize it in a structured format. Classify the reason for the request JSON format.
    ```
 
-1. In the **Assistant setup** section near the system message, select the **Add an example** button. Add the following example and Click on **Save**.
+1. In the **Assistant setup** section near the system message, select the **Add an example** button. Add the following example and Click on **Save changes**.
 
    **User:**
 
@@ -205,15 +206,16 @@ In this lab, you will perform:
 
    ![](media/Data_extraction_output.png "chat-session question")
 
-   > **Note**: Chat may not respond with the exact output as shown in the screenshots.
+   > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
 ### Task 8: Fashion product description  
 
-1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save**.
+1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save changes**.
 
    ```
    You are an AI assistant that helps to create a promotional message with specified details 
    ```
+   >**Note:** Erase the example that you had entered in the previous task and click on **Save changes**.
 
 1. In the **Chat session** section, enter the following prompt and press **Enter**.
 
@@ -229,11 +231,11 @@ In this lab, you will perform:
 
    ![](media/Fashion-product-output.png "chat-session question")
 
-   > **Note**: Chat may not respond with the exact output as shown in the screenshots.
+   > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
 ### Task 9: Write a Blog Post
 
-1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save**.
+1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save changes**.
 
    ```
    You are an AI assistant that helps to write a blog post with a relatable hashtag. 
@@ -249,7 +251,7 @@ In this lab, you will perform:
 
    ![](media/blog-post-output.png "chat-session question")
 
-   > **Note**: Chat may not respond with the exact output as shown in the screenshots.
+   > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
 ### Task 10: Call Center
 
@@ -279,7 +281,7 @@ In this lab, you will perform:
 
    ![](media/Call-Center.png "chat-session question")
 
-   > **Note**: Chat may not respond with the exact output as shown in the screenshots.
+   > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
 ### Task 11: Few-shot learning 
 
@@ -289,7 +291,7 @@ In this lab, you will perform:
    You are an AI assistant that helps to classify a movie summary
    ```
 
-1. In the **Assistant setup** section near the system message, select the **Add an example** button. Add the following example and Click on **Save**.
+1. In the **Assistant setup** section near the system message, select the **Add an example** button. Add the following example and Click on **Save changes**.
 
     **User:**
 
@@ -317,15 +319,16 @@ In this lab, you will perform:
 
    ![](media/Few-shot-learning-output.png "chat-session question")
 
-   > **Note**: Chat may not respond with the exact output as shown in the screenshots.
+   > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
 ### Task 12: NL to SQL with Codex
 
-1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save**.
+1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save changes**.
 
    ```
    You are an AI assistant that helps to generate SQL query that returns the top 10 orders and show the customer name
    ```
+   >**Note:** Erase the example that you had entered in the previous task and click on **Save changes**.
 
 1. In the **Chat session** section, enter the following prompt and press **Enter**.
 
@@ -339,4 +342,6 @@ In this lab, you will perform:
 
    ![](media/SQL-with-Codex-output.png "chat-session question")
 
-   > **Note**: Chat may not respond with the exact output as shown in the screenshots.
+   > **Note:** Chat may not respond with the exact output as shown in the screenshots.
+
+## Proceed to Exercise 3
