@@ -48,6 +48,8 @@ Next, add your data in the chat playground to see how it responds with your data
 1. Under **Select Azure Blob Storage Resource** select **storage<inject key="Deployment ID" enableCopy="false"></inject>** from the dropdown menu.
 
    >**Note:** If you encounter an access permission error, click on **Turn on CORS**
+   
+   ![](media/cors.png "Create storage account")
 
 1. Select **Create a new Azure Cognitive Search resource** with the following settings. Anything not specified leave as the default.
 
