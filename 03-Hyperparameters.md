@@ -14,63 +14,51 @@ When working with prompts, you will interact with the LLM via an API or directly
 
 The general recommendation is to alter one, not both.
 
-### text-davinci-003 model
+**Max_tokens**
 
-**temperature**
-```
-Controls randomness: Lowering results in less random completions. 
-As the temperature approaches zero, the model will become deterministic and repetitive.
-```
-
-**max_tokens**
-```
 Set a limit on the number of tokens to generate in a response. 
 The system supports a maximum of 2048 tokens shared between a given prompt and response completion. 
 (One token is roughly 4 characters for typical English text.)
-```
 
-**top_p***
-```
+**Top_p***
+
 Control which tokens the model will consider when generating a response via nucleus sampling. 
 Setting this to 0.9 will consider the top 90% most likely of all possible tokens. 
 This will avoid using tokens that are clearly incorrect while still maintaining variety
 when the model has low confidence in the highest-scoring tokens.
-```
 
-**frequency_penalty**
-```
+**Frequency_penalty**
+
 Reduce the chance of repeating a token proportionally based on how often it has appeared in the text so far.
 This decreases the likelihood of repeating the exact same text in a response.
-```
 
-**presence_penalty**
-```
+**Presence_penalty**
+
 Reduce the chance of repeating any token that has appeared in the text at all so far. 
 This increases the likelihood of introducing new topics in a response.
-```
 
-**best_of**
-```
+**Best_of**
+
 Generate multiple responses, and display only the one with the best total probability across all its tokens. 
 The unused candidates will still incur usage costs, so use this parameter carefully and make sure to set the
 parameters for max response length and ending triggers as well. Note that streaming will only work when this is set to 1.
-```
 
-**stop**
-```
+**Stop**
+
 Make responses stop at a desired point, such as the end of a sentence or list.
 Specify up to four sequences where the model will stop generating further tokens
 in a response. The returned text will not contain the stop sequence.
-```
-###  Trying out Prompt Engineering with Azure OpenAI Playground
+
+### Task 1: Trying out Prompt Engineering with Azure OpenAI Playground
+
 Azure OpenAI Studio provides access to model management, deployment, experimentation, customization, and learning resources. The Chat playground within Azure OpenAI Studio is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
 
-In the Chat playground, you're able to add few-shot examples. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples.
+In the Chat playground, you're able to add a few-shot examples. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples.
 
-In the Assistant setup, you can provide few-shot examples of what the user input may be, and what the assistant response should be. The assistant tries to mimic the responses you include here in tone, rules, and format you've defined in your system message.
+In the Assistant setup, you can provide a few-shot examples of what the user input may be, and what the assistant response should be. The assistant tries to mimic the responses you include here in tone, rules, and format you've defined in your system message.
 Let's go ahead and launch the Azure OpenAI playground to learn about prompt engineering. 
 
-1. In the **Azure AI Stuido**, from the left navigation pane, click on **Completions** under **Playground** from the left menu.
+1. In the **Azure AI Studio**, from the left navigation pane, click on **Completions** under **Playground** from the left menu.
 
 1. In the **Completions playground**, choose **davinci-002** **(1)** from the drop-down menu under Deployments. Then, choose any **query** **(2)** from the examples drop-down menu. This will open the pre-existing question in the **text box** **(3)**. After that, click **Generate** **(4)** to see the result in the **Text box** **(5)**.
 
@@ -79,8 +67,7 @@ Let's go ahead and launch the Azure OpenAI playground to learn about prompt engi
  
     ![](media/image1a.png)
 
----
-## Basic Prompt Examples
+## Task 2: Basic Prompt Examples
 
 > **Note:** Please feel free to enter anything listed in the `Prompt:` box into a `text-davinci-003` model in the [Azure OpenAI Studio's Playground](https://oai.azure.com/portal/playground) to follow along with these prompt examples. Be aware that you may receive different outputs than what is listed in the `Output:` box, given the nature of generative models
 
@@ -125,7 +112,7 @@ Did our instructions improve our output? Admittedly, this is not the funniest jo
 | The output be in the form of a joke | An attempt was made |
 
 ---
-## Standard Prompts
+## Standard Prompts [Read Only]
 
 We looked at two very basic prompts above as well as the output they generated. Now that we are familiar with the basic concepts of prompt engineering, let's look at some common formats for prompts. 
 
