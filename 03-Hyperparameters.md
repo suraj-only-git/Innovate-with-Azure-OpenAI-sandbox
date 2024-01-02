@@ -63,7 +63,7 @@ Let's go ahead and launch the Azure OpenAI playground to learn about prompt engi
 1. In the **Completions playground**, choose **davinci-002** **(1)** from the drop-down menu under Deployments. Then, choose any **query** **(2)** from the examples drop-down menu. This will open the pre-existing question in the **text box** **(3)**. After that, click **Generate** **(4)** to see the result in the **Text box** **(5)**.
 
    > **Note:** Chat may not respond with the exact output as shown in the screenshots. Following are the examples of what you'll most likely see in this exercise, but the response may vary.
-   > **Note:** All examples are tested with text-davinci-003 model unless otherwise specified. Each of the Examples scenarios (shown in the red box labeled as '1' in the picture below) has pre-set Parameters (e.g. temperature=0.7 and top_p=1 as shown in the red box labled as '2'). The examples will use those pre-sets unless otherwise noted in a specific prompt scenario.
+   > **Note:** All examples are tested with davinci-002 model unless otherwise specified. Each of the Examples scenarios (shown in the red box labeled as '1' in the picture below) has pre-set Parameters (e.g. temperature=0.7 and top_p=1 as shown in the red box labled as '2'). The examples will use those pre-sets unless otherwise noted in a specific prompt scenario.
  
     ![](media/image1a.png)
 
@@ -112,7 +112,7 @@ Did our instructions improve our output? Admittedly, this is not the funniest jo
 | The output be in the form of a joke | An attempt was made |
 
 ---
-## Standard Prompts [Read Only]
+## Task 3: Standard Prompts [Read Only]
 
 We looked at two very basic prompts above as well as the output they generated. Now that we are familiar with the basic concepts of prompt engineering, let's look at some common formats for prompts. 
 
@@ -150,7 +150,7 @@ Given the standard format above, one popular and effective technique to promptin
 
 ```
 
-### Few-shot Question-Answer (QA) Format
+## Few-shot Question-Answer (QA) Format
 And you can already guess that its QA format version would look like this:
 
 ```
@@ -167,7 +167,11 @@ Q: <Question>?
 A:
 ```
 
-Keep in mind that it's not required to use the QA format. The format depends on the task at hand. For instance, you can perform a simple classification task and give examples that demonstrate the task as follows:
+Keep in mind that it's not required to use the QA format. The format depends on the task at hand. 
+
+## Task 4: Demonstration of Prompts
+
+You can perform a simple classification task and give examples that demonstrate the task as follows:
 
 *Prompt:*
 ```
@@ -181,6 +185,8 @@ What a horrible show! //
 ```
 Negative
 ```
+>**Note:** The output generated may provide a few more extra examples along with the desired results.
+
 or
 *Prompt*
 ```
@@ -201,7 +207,7 @@ Few-shot prompts enable in-context learning, which is the ability of language mo
 
 ---
 
-## Elements of a Prompt
+## Task 5: Elements of a Prompt [Read Only]
 
 As we cover more and more examples and applications that are possible with prompt engineering, you will notice that there are certain elements that make up a prompt. 
 
@@ -219,7 +225,7 @@ Not all the components are required for a prompt, and the format depends on the 
 
 ---
 
-## General Tips for Designing Prompts
+## Task 6: General Tips for Designing Prompts
 
 Here are some tips to keep in mind while you are designing your prompts:
 
@@ -283,7 +289,7 @@ Please make a table summarizing the fruits from Goocrux
 
 Given the tips above about being detailed and improving format, it's easy to fall into the trap of wanting to be too clever about prompts and potentially creating imprecise descriptions. It's often better to be specific and direct. The model doesn't mind you being explicit in your instructions; you can't offend it! The analogy here is very similar to effective communication: the more direct, the more effectively the message gets across.
 
-For example, you might be interested in learning the concept of prompt engineering. You might try something like:
+For example, you might be interested in learning the concept of prompt engineering. You might try something like the following with the choosing the **chatbot** under the examples dropdown:
 *Prompt:*
 ```
 Provide a short explanation of what prompt engineering is in NLP without using technical language
@@ -294,6 +300,9 @@ Prompt engineering in NLP is the process of creating questions or prompts to hel
 natural language. It involves creating questions or statements that can be used to prompt a computer to generate
 a response in natural language.
 ```
+>**Note:** The output generated may vary from the depicted text.
+>**Note:** If you get random outputs then try increasing the **Temperature** from the right pane under parameters.
+
 It's not clear from the prompt above how many sentences to use, what style we need things output in, or what we intend to take away from the output. You might get passable responses with the above prompt; the better prompt would be very specific, concise, and to the point. Something like:
 *Prompt:*
 ```
