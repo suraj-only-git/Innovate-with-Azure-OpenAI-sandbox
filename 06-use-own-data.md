@@ -51,11 +51,11 @@ Next, add your data in the chat playground to see how it responds with your data
 
 1. Select **Create a new Azure Cognitive Search resource** with the following settings. Anything not specified leave as the default.
 
-    - **Subscription**: Default - Pre-assigned subscription
-    - **Resource group**: OpenAI
-    - **Service name**: cognitive-search-service-<inject key="Deployment ID" enableCopy="false"></inject>
-    - **Location**:Sweden Central
-    - **Pricing tier**: Basic
+    - **Subscription**: Default - Pre-assigned subscription (1)
+    - **Resource group**: OpenAI (2)
+    - **Service name**: **cognitive-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** (3)
+    - **Location**: Sweden Central (4)
+    - **Pricing tier**: Basic (5)
 
     ![](media/img455.png "Create cognitive search resource")
 
