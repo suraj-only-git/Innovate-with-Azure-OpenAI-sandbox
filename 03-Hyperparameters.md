@@ -51,7 +51,7 @@ Make responses stop at a desired point, such as the end of a sentence or list.
 Specify up to four sequences where the model will stop generating further tokens
 in a response. The returned text will not contain the stop sequence.
 
-### Task 1: Trying out Prompt Engineering with Azure OpenAI Playground
+## Task 1: Trying out Prompt Engineering with Azure OpenAI Playground
 
 Azure OpenAI Studio provides access to model management, deployment, experimentation, customization, and learning resources. The Chat playground within Azure OpenAI Studio is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
 
