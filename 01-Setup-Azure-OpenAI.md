@@ -14,15 +14,16 @@ In this exercise, you will create a deployment and model in Azure OpenAI studio 
 
 3. Create an **Azure OpenAI** resource with the following settings:
    
-    - **Subscription**: Default - Pre-assigned subscription.
-    - **Resource group**: OpenAI
-    - **Region**: Select **<inject key="Region" enableCopy="false" />**
-    - **Name**: OpenAI-<inject key="Deployment ID" enableCopy="false"></inject>
-    - **Pricing tier**: Standard S0
+    - **Subscription**: Default - Pre-assigned subscription. (1)
+    - **Resource group**: OpenAI (2)
+    - **Region**: Select **<inject key="Region" enableCopy="false" />** (3)
+    - **Name**: OpenAI-<inject key="Deployment ID" enableCopy="false"></inject> (4)
+    - **Pricing tier**: Standard S0 (5)
+    -  Click **Next** (6)
   
-      ![](media/img1.png "Create Azure OpenAI resource")
+      ![](media/i1a.png)
       
-4. Keep rest as default and click on Create .
+4. Keep rest as default click on Next twice and subsequently click on **Create** .
 5. Wait for deployment to complete. Then go to the deployed Azure OpenAI resource in the Azure portal.
 
 ### Task 2: Deploy a model
