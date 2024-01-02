@@ -16,13 +16,15 @@ In this exercise, you will create a deployment and model in Azure OpenAI studio 
    
     - **Subscription**: Default - Pre-assigned subscription. (1)
     - **Resource group**: OpenAI (2)
-    - **Region**: Select **<inject key="Region" enableCopy="false" />** (3)
+    - **Region**: Sweden Central
     - **Name**: OpenAI-<inject key="Deployment ID" enableCopy="false"></inject> (4)
     - **Pricing tier**: Standard S0 (5)
     -  Click **Next** (6)
   
-      ![](media/i1a.png)
+      ![](media/image1012.png)
       
+      >**Note:** Kindly select Sweden Central region only as the resources are region-specific.
+
 4. Keep rest as default click on Next twice and subsequently click on **Create** .
 5. Wait for deployment to complete. Then go to the deployed Azure OpenAI resource in the Azure portal.
 
@@ -59,7 +61,7 @@ Azure OpenAI provides a web-based portal named **Azure OpenAI Studio**, that you
 
       ![](media/updateimg4.png "Deploy model configurations")
 
-8. Click on the **Create**(5) button to deploy a model that you will be playing around with as you proceed.
+8. Click on the **Create** (5) button to deploy a model that you will be playing around with as you proceed.
 
 9. In the **Deployments** page, click on **+ Create new deployment**.
 
@@ -67,14 +69,14 @@ Azure OpenAI provides a web-based portal named **Azure OpenAI Studio**, that you
 
 10. Within the **Deploy model** pop-up interface, enter the following details and then click on **Advanced options (3)** followed by scaling down the **Tokens per Minute Rate Limit (thousands) (4)**:
     
-    - **Select a Model**: text-embedding-ada-002
-    - **Model version**: 2(Default)
-    - **Deployment name**: text-embedding-ada-002
-    - **Tokens per Minute Rate Limit (thousands)**: 40K
+    - **Select a Model**: text-embedding-ada-002 (1) 
+    - **Model version**: 2(Default) (2)
+    - **Deployment name**: text-embedding-ada-002 (3)
+    - **Tokens per Minute Rate Limit (thousands)**: 40K (4)
   
       ![](media/update3.png "Deploy model configurations")
 
-11. Click on the **Create** button to deploy a model that you will be playing around with as you proceed.
+11. Click on the **Create** (5) button to deploy a model that you will be playing around with as you proceed.
 
 12. In the **Deployments** page, click on **+ Create new deployment**.
 
