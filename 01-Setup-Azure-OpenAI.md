@@ -74,7 +74,7 @@ Azure OpenAI provides a web-based portal named **Azure OpenAI Studio**, that you
     - **Deployment name**: text-embedding-ada-002 (3)
     - **Tokens per Minute Rate Limit (thousands)**: 40K (4)
   
-      ![](media/update3.png "Deploy model configurations")
+      ![](media/d1.png "Deploy model configurations")
 
 11. Click on the **Create** (5) button to deploy a model that you will be playing around with as you proceed.
 
@@ -84,16 +84,16 @@ Azure OpenAI provides a web-based portal named **Azure OpenAI Studio**, that you
 
 13. Within the **Deploy model** pop-up interface, enter the following details and then click on **Advanced options (3)** followed by scaling down the **Tokens per Minute Rate Limit (thousands) (4)**:
     
-    - **Select a Model**: davinci-002
-    - **Model version**: (Default)
-    - **Deployment name**: davinci-002
-    - **Tokens per Minute Rate Limit (thousands)**: 20K
+    - **Select a Model**: davinci-002 (1)
+    - **Model version**: (Default) (2)
+    - **Deployment name**: davinci-002 (3)
+    - **Tokens per Minute Rate Limit (thousands)**: 20K (4)
   
-      ![](media/update2.png "Deploy model configurations")
+      ![](media/d2.1.png "Deploy model configurations")
 
-14. Click on the **Create** button to deploy a model that you will be playing around with as you proceed.
+14. Click on the **Create** (5) button to deploy a model that you will be playing around with as you proceed.
 
-      **Note**: Azure OpenAI includes multiple models, each optimized for a different balance of capabilities and performance. In this exercise, you'll use the **GPT-35-Turbo** model, which is a good general model for summarizing and generating natural language and code. For more information about the available models in Azure OpenAI, see [Models](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models) in the Azure OpenAI documentation.
+      >**Note:** Azure OpenAI includes multiple models, each optimized for a different balance of capabilities and performance. In this exercise, you'll use the **GPT-35-Turbo** model, which is a good general model for summarizing and generating natural language and code. For more information about the available models in Azure OpenAI, see [Models](https://learn.microsoft.com/azure/cognitive-services/openai/concepts/models) in the Azure OpenAI documentation.
 
 ### Task 3: Explore Azure AI Studio
 
@@ -101,9 +101,11 @@ You can deploy, manage, and explore models in your Azure OpenAI Service by using
 
 1. On the Overview page for your Azure OpenAI resource, use the Explore button to open Azure AI Studio in a new browser tab. Alternatively, navigate to [Azure AI Studio](https://oai.azure.com/) directly.
 
-   ![](media/ai-studio.png)
+   ![](media/ai-studio1.png)
 
 1. View the pages available in the pane on the left. You can always return to the home page at the top. Additionally, AI Studio provides multiple pages where you can:
 
    - Experiment with models in a playground.
    - Manage model deployments and data.
+
+## Proceed to Exercise 2
