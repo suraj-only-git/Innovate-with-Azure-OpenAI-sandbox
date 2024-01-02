@@ -344,4 +344,20 @@ In this lab, you will perform:
 
    > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
+## Review
+
+In this exercise you have completed the following tasks:
+- Task 1: German Translation
+- Task 2: Negation
+- Task 3: Classification
+- Task 4: E-Mail Summarization
+- Task 5: Rewriting
+- Task 6: Multiple Tasks
+- Task 7: Data extraction to JSON
+- Task 8: Fashion product description
+- Task 9: Write a Blog Post
+- Task 10: Call Center
+- Task 11: Few-shot learning
+- Task 12: NL to SQL with Codex
+
 ## Proceed to Exercise 3
