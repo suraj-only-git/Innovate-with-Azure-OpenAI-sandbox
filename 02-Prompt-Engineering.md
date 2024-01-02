@@ -153,7 +153,7 @@ In this lab, you will perform:
    ```
    You are an AI assistant that helps to provide three variations of the given text: one translated into German, one with the negation of the original meaning in English, and one with the perspective changed from first-person to third-person in a structured format. 
    ```
-  >**Note:** Erase the example that you had entered in the previous task and click on **Save changes**. 
+    >**Note:** Erase the example that you had entered in the previous task and click on **Save changes**. 
 
 1. In the **Chat session** section, enter the following prompt and press **Enter**.
 
