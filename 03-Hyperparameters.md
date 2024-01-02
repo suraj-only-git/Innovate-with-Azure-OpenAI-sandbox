@@ -355,6 +355,20 @@ I apologize that you are having difficulty accessing your account. Please click 
 Some of the examples above were adopted from the ["Best practices for prompt engineering with OpenAI API" article](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api) and the 
 [Democratizing Artificial Intelligence Research, Education, and Technologies's Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
 
+## Review
+
+In this lab you have completed the following tasks:
+
+- Task 1: Trying out Prompt Engineering with Azure OpenAI Playground
+- Task 2: Basic Prompt Examples
+- Task 3: Standard Prompts
+- Task 4: Demonstration of Prompts
+- Task 5: Elements of a Prompt
+- Task 6: General Tips for Designing Prompts
+
+## Proceed to Exercise 4
+
+ 
 
 
 
