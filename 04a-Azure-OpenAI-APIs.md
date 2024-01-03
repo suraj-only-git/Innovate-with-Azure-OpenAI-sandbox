@@ -14,7 +14,16 @@ In this lab, you will perform:
 
 ![](media/arc4a.png)
 
-### Task 1: Setup configuration for Integrating AI
+
+## Task 1: Fetch the OpenAI Key and Endpoint Values
+
+1. Naviagte to the  [Azure portal](http://portal.azure.com/), search and select **Azure OpenAI**, from the **Azure AI Services | Azure OpenAI pane**, select the **OpenAI-<inject key="Deployment ID" enableCopy="false"></inject>**.
+
+1. Now select **Keys and Endpoints** **(1)** under Resource Management and click on **Show Keys** **(2)**. Copy the **KEY 1** **(3)** and **Endpoint** **(4)**, and store them in a text file for later use.
+
+   ![](images/keyimg.png)
+
+### Task 2: Setup configuration for Integrating AI
 
 1. Open **Visual Studio Code** from the Lab VM desktop by double-clicking on it.
 
@@ -32,7 +41,7 @@ In this lab, you will perform:
 
    ![](media/image-rg-18.png "Deploy model configurations")
 
-1. Click on **.env**, replace the values and save the file by pressing **ctrl + s**.
+1. From the left pane,click on **.env**, replace the values and save the file by pressing **ctrl + s**.
 
    | **Variables**                            | **Values**                                                                              |
    | ---------------------------------------- |-----------------------------------------------------------------------------------------|
@@ -47,7 +56,7 @@ In this lab, you will perform:
 
    ![](media/updateenv.png "Deploy model configurations")
 
-### Task 2: Azure OpenAI API
+### Task 3: Azure OpenAI API
 
 In this Task, we'll walk through showing how to interact with an Azure OpenAI API service endpoint. This will not likely be the best option for most scenarios, but it highlights what a direct call to the underlying rest-based API looks like and will give you an appreciation of what's going on behind the scenes when you use the orchestrators in the other exercises.
 
@@ -73,7 +82,7 @@ In this Task, we'll walk through showing how to interact with an Azure OpenAI AP
 
       ![](media/install.png)
 
-### Task 3: OpenAI Packages
+### Task 4: OpenAI Packages
 
 In this task, we'll show how to interact with the Azure OpenAI API using the OpenAI Python library. This will provide some insight into the configuration and setup that is needed to use one of these higher-level abstraction frameworks.
 
