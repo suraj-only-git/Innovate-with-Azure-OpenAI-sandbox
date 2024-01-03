@@ -115,7 +115,7 @@ The application uses a configuration file to store the details needed to connect
     
 2. Update the configuration values to include the **Endpoint** and **Key1** for your Azure OpenAI service. Then save the file by right-clicking the file from the left pane.
 
-     >**Note:** Copy the Endpoint and Key value for the **dalle-openai-<inject key="Deployment ID" enableCopy="false"></inject** from the Azure portal.
+     >**Note:** Copy the Endpoint and Key value for the **dalle-openai-<inject key="Deployment ID" enableCopy="false"></inject>** from the Azure portal.
      
      > **Tip**: You can adjust the split at the top of the cloud shell pane to see the Azure portal, and get the endpoint and key values from the **Keys and Endpoint** page for your Azure OpenAI service.
 
