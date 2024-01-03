@@ -2,6 +2,8 @@
 
 To begin exploring Azure OpenAI capabilities using a no-code approach, you can utilize the GPT-3 Playground. This web application features a simple text box where you can enter a prompt and generate a completion. The Playground allows you to easily iterate and experiment with the various capabilities offered by Azure OpenAI.
 
+>**Note:** Please be aware that the generated output may differ from the example provided in the lab guide.
+
 ## Basic Overview of Azure OpenAI Service Hyperparameters
 
 ## Quick Note on adjusting Hyperparameters
@@ -14,85 +16,60 @@ When working with prompts, you will interact with the LLM via an API or directly
 
 The general recommendation is to alter one, not both.
 
-### text-davinci-003 model
+**Max_tokens**
 
-**temperature**
-```
-Controls randomness: Lowering results in less random completions. 
-As the temperature approaches zero, the model will become deterministic and repetitive.
-```
-
-**max_tokens**
-```
 Set a limit on the number of tokens to generate in a response. 
 The system supports a maximum of 2048 tokens shared between a given prompt and response completion. 
 (One token is roughly 4 characters for typical English text.)
-```
 
-**top_p***
-```
+**Top_p***
+
 Control which tokens the model will consider when generating a response via nucleus sampling. 
 Setting this to 0.9 will consider the top 90% most likely of all possible tokens. 
 This will avoid using tokens that are clearly incorrect while still maintaining variety
 when the model has low confidence in the highest-scoring tokens.
-```
 
-**frequency_penalty**
-```
+**Frequency_penalty**
+
 Reduce the chance of repeating a token proportionally based on how often it has appeared in the text so far.
 This decreases the likelihood of repeating the exact same text in a response.
-```
 
-**presence_penalty**
-```
+**Presence_penalty**
+
 Reduce the chance of repeating any token that has appeared in the text at all so far. 
 This increases the likelihood of introducing new topics in a response.
-```
 
-**best_of**
-```
+**Best_of**
+
 Generate multiple responses, and display only the one with the best total probability across all its tokens. 
 The unused candidates will still incur usage costs, so use this parameter carefully and make sure to set the
 parameters for max response length and ending triggers as well. Note that streaming will only work when this is set to 1.
-```
 
-**stop**
-```
+**Stop**
+
 Make responses stop at a desired point, such as the end of a sentence or list.
 Specify up to four sequences where the model will stop generating further tokens
 in a response. The returned text will not contain the stop sequence.
-```
-###  Trying out Prompt Engineering with Azure OpenAI Playground
+
+## Task 1: Trying out Prompt Engineering with Azure OpenAI Playground
+
 Azure OpenAI Studio provides access to model management, deployment, experimentation, customization, and learning resources. The Chat playground within Azure OpenAI Studio is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context.
 
-In the Chat playground, you're able to add few-shot examples. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples.
+In the Chat playground, you're able to add a few-shot examples. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples.
 
-In the Assistant setup, you can provide few-shot examples of what the user input may be, and what the assistant response should be. The assistant tries to mimic the responses you include here in tone, rules, and format you've defined in your system message.
+In the Assistant setup, you can provide a few-shot examples of what the user input may be, and what the assistant response should be. The assistant tries to mimic the responses you include here in tone, rules, and format you've defined in your system message.
 Let's go ahead and launch the Azure OpenAI playground to learn about prompt engineering. 
 
-1. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
+1. In the **Azure AI Studio**, from the left navigation pane, click on **Completions** under **Playground** from the left menu.
 
-   ![](media/openai8.png)
+1. In the **Completions playground**, choose **davinci-002** **(1)** from the drop-down menu under Deployments. Then, choose any **query** **(2)** from the examples drop-down menu. This will open the pre-existing question in the **text box** **(3)**. After that, click **Generate** **(4)** to see the result in the **Text box** **(5)**.
 
-1. On **Cognitive Services | Azure OpenAI** blade, select **openai-<inject key="DeploymentID" enableCopy="false"/>**
-
-   ![](media/openai9.png)
-
-1. In the Azure OpenAI resource pane, click on **Go to Azure OpenAI Studio** it will navigate to **Azure AI Studio**.
-
-   ![](media/openai11-1.png)
-
-1. In the **Azure AI Stuido**, click on **Completions** under play **Playground** from the left menu.
-
-1. In the **Completions playground**, choose **demomodel** **(1)** from the drop-down menu under Deployments. Then, choose any **query** **(2)** from the examples drop-down menu. This will open the pre-existing question in the **text box** **(3)**. After that, click **Generate** **(4)** to see the result in the **Text box** **(5)**.
-
-   > **Note**: Chat may not respond with the exact output as shown in the screenshots. Following are the examples of what you'll most likely see in this exercise, but the response may vary.
-   > **Note**: All examples are tested with text-davinci-003 model unless otherwise specified. Each of the Examples scenarios (shown in the red box labeled as '1' in the picture below) has pre-set Parameters (e.g. temperature=0.7 and top_p=1 as shown in the red box labled as '2'). The examples will use those pre-sets unless otherwise noted in a specific prompt scenario.
+   > **Note:** Chat may not respond with the exact output as shown in the screenshots. Following are the examples of what you'll most likely see in this exercise, but the response may vary.
+   > **Note:** All examples are tested with davinci-002 model unless otherwise specified. Each of the Examples scenarios (shown in the red box labeled as '1' in the picture below) has pre-set Parameters (e.g. temperature=0.7 and top_p=1 as shown in the red box labled as '2'). The examples will use those pre-sets unless otherwise noted in a specific prompt scenario.
  
     ![](media/image1a.png)
 
----
-## Basic Prompt Examples
+## Task 2: Basic Prompt Examples
 
 > **Note:** Please feel free to enter anything listed in the `Prompt:` box into a `text-davinci-003` model in the [Azure OpenAI Studio's Playground](https://oai.azure.com/portal/playground) to follow along with these prompt examples. Be aware that you may receive different outputs than what is listed in the `Output:` box, given the nature of generative models
 
@@ -110,6 +87,10 @@ GPT-3 is
  It is a large-scale language model that uses deep learning techniques to generate human-like text. GPT-3 uses a
  transformer-based architecture to generate text with context
 ```
+  
+   ![](media/img232.png)
+
+> **Note:** The output may vary according to the examples chosed from the dropdown.
 > **Note:**  The `Output` in our example ends abruptly because our **Max length (tokens)** variable is set to `=60`. **Max Length (tokens)** sets a limit on the number of tokens to generate in a response. The `text_davinci-003` model supports a maximum of 2048 tokens shared between a given prompt and response completion. (One token is roughly 4 characters for typical English text.)
 
 The `Output:` is a series of strings that make sense given the context provided by our prompt of `"GPT3-3 is"`. However, the output may be unwanted or unexpected based on our use-case. How can we refine, or engineer, our prompt in order to achieve our desired output?
@@ -133,7 +114,7 @@ Did our instructions improve our output? Admittedly, this is not the funniest jo
 | The output be in the form of a joke | An attempt was made |
 
 ---
-## Standard Prompts
+## Task 3: Standard Prompts [Read Only]
 
 We looked at two very basic prompts above as well as the output they generated. Now that we are familiar with the basic concepts of prompt engineering, let's look at some common formats for prompts. 
 
@@ -171,7 +152,7 @@ Given the standard format above, one popular and effective technique to promptin
 
 ```
 
-### Few-shot Question-Answer (QA) Format
+## Few-shot Question-Answer (QA) Format
 And you can already guess that its QA format version would look like this:
 
 ```
@@ -188,7 +169,11 @@ Q: <Question>?
 A:
 ```
 
-Keep in mind that it's not required to use the QA format. The format depends on the task at hand. For instance, you can perform a simple classification task and give examples that demonstrate the task as follows:
+Keep in mind that it's not required to use the QA format. The format depends on the task at hand. 
+
+## Task 4: Demonstration of Prompts
+
+You can perform a simple classification task and give examples that demonstrate the task as follows:
 
 *Prompt:*
 ```
@@ -202,6 +187,8 @@ What a horrible show! //
 ```
 Negative
 ```
+>**Note:** The output generated may provide a few more extra examples along with the desired results.
+
 or
 *Prompt*
 ```
@@ -222,7 +209,7 @@ Few-shot prompts enable in-context learning, which is the ability of language mo
 
 ---
 
-## Elements of a Prompt
+## Task 5: Elements of a Prompt [Read Only]
 
 As we cover more and more examples and applications that are possible with prompt engineering, you will notice that there are certain elements that make up a prompt. 
 
@@ -240,7 +227,7 @@ Not all the components are required for a prompt, and the format depends on the 
 
 ---
 
-## General Tips for Designing Prompts
+## Task 6: General Tips for Designing Prompts
 
 Here are some tips to keep in mind while you are designing your prompts:
 
@@ -304,7 +291,7 @@ Please make a table summarizing the fruits from Goocrux
 
 Given the tips above about being detailed and improving format, it's easy to fall into the trap of wanting to be too clever about prompts and potentially creating imprecise descriptions. It's often better to be specific and direct. The model doesn't mind you being explicit in your instructions; you can't offend it! The analogy here is very similar to effective communication: the more direct, the more effectively the message gets across.
 
-For example, you might be interested in learning the concept of prompt engineering. You might try something like:
+For example, you might be interested in learning the concept of prompt engineering. You might try something like the following with the choosing the **chatbot** under the examples dropdown:
 *Prompt:*
 ```
 Provide a short explanation of what prompt engineering is in NLP without using technical language
@@ -315,6 +302,8 @@ Prompt engineering in NLP is the process of creating questions or prompts to hel
 natural language. It involves creating questions or statements that can be used to prompt a computer to generate
 a response in natural language.
 ```
+>**Note:** If you get random outputs then try increasing the **Temperature** from the right pane under parameters.
+
 It's not clear from the prompt above how many sentences to use, what style we need things output in, or what we intend to take away from the output. You might get passable responses with the above prompt; the better prompt would be very specific, concise, and to the point. Something like:
 *Prompt:*
 ```
@@ -366,6 +355,20 @@ I apologize that you are having difficulty accessing your account. Please click 
 Some of the examples above were adopted from the ["Best practices for prompt engineering with OpenAI API" article](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-openai-api) and the 
 [Democratizing Artificial Intelligence Research, Education, and Technologies's Prompt Engineering Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)
 
+## Review
+
+In this lab you have completed the following tasks:
+
+- Task 1: Trying out Prompt Engineering with Azure OpenAI Playground
+- Task 2: Basic Prompt Examples
+- Task 3: Standard Prompts
+- Task 4: Demonstration of Prompts
+- Task 5: Elements of a Prompt
+- Task 6: General Tips for Designing Prompts
+
+## Proceed to Exercise 4a
+
+ 
 
 
 

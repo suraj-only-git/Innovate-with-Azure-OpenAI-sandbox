@@ -33,61 +33,57 @@ Before connecting Azure OpenAI to your data, first observe how the base model re
     
 1. Try similar questions about tourism and places to stay for other locations that will be included in our grounding data, such as London, or San Francisco. You'll likely get complete responses about areas or neighborhoods, and some general facts about the city.
 
+
 ### Task 2: Connect your data in the chat playground
 
 Next, add your data in the chat playground to see how it responds with your data as grounding
 
-1. [Download the data](https://aka.ms/own-data-brochures) that you will use from GitHub. Extract the PDFs in the `.zip` provided.
+1. Copy this link and paste it into a browser window in the Lab VM [Download the data](https://aka.ms/own-data-brochures). Extract the PDFs in the `.zip` provided.
 1. Navigate to the **Chat** playground, and select *Add your data* in the Assistant setup pane.
+
+   ![](media/image243.png "Create storage account")
+
 1. Select **+ Add a data source** and choose *Upload files* from the dropdown.
 
-1. You'll need to create a storage account and Azure Cognitive Search resource. Under the dropdown for the storage resource, select **Create a new Azure Blob storage resource**, and create a storage account with the following settings. Anything not specified leave as the default.
+1. Under **Select Azure Blob Storage Resource** select **storage<inject key="Deployment ID" enableCopy="false"></inject>** from the dropdown menu.
 
-    - **Subscription**: Default - Pre-assigned subscription
-    - **Resource group**: labvm-rg-<inject key="Deployment ID" enableCopy="false"></inject>
-    - **Storage account name**: storage<inject key="Deployment ID" enableCopy="false"></inject>
-    - **Region**: Select <inject key="Region" enableCopy="false" />
-    - **Redundancy**: Locally-redundant storage (LRS)
-  
-    ![](media/img12.png "Create storage account")
+   >**Note:** If you encounter an access permission error, click on **Turn on CORS**
+   
+   ![](media/cors.png "Create storage account")
 
-1. Once the resource is being created, come back to Azure OpenAI Studio and select **Create a new Azure Cognitive Search resource** with the following settings. Anything not specified leave as the default.
+1. Select **Create a new Azure Cognitive Search resource** with the following settings. Anything not specified leave as the default.
 
-    - **Subscription**: Default - Pre-assigned subscription
-    - **Resource group**: labvm-rg-<inject key="Deployment ID" enableCopy="false"></inject>
-    - **Service name**: cognitive-search-<inject key="Deployment ID" enableCopy="false"></inject>
-    - **Location**:Select <inject key="Region" enableCopy="false" />
-    - **Pricing tier**: Basic
+    - **Subscription**: Default - Pre-assigned subscription (1)
+    - **Resource group**: OpenAI (2)
+    - **Service name**: **cognitive-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** (3)
+    - **Location**: Sweden Central (4)
+    - **Pricing tier**: Basic (5)
 
-    ![](media/img13.png "Create cognitive search resource")
+    ![](media/img455.png "Create cognitive search resource")
 
-1. Wait until your search resource has been deployed, then switch back to the Azure AI Studio and refresh the page.
-1. In the **Add data**, enter the following values for your data source and then click on **Next**.
+1. Click on **Review + Create** and subsequently click on **Create**. Wait until your search resource has been deployed, then switch back to the Azure AI Studio and refresh the page.
+1. Under the **Select Azure AI Search resource** select **cognitive-search-service-<inject key="Deployment ID" enableCopy="false"></inject>**.
 
-    - **Select data source**: Upload files
-    - **Select Azure Blob storage resouce**: *Choose the storage resource you created*
-        - Turn on CORS when prompted
-    - **Select Azure AI Search resource**: *Choose the search resource you created*
-    - **Enter the index name**: margiestravel
+1. Specify the following details and hit **Next**
+    - **Enter the index name**: **cognitive-search-index**
     - **Add vector search to this search resource**: unchecked
-    - **I acknowledge that connecting to an Azure Cognitive Search account will incur usage to my account** : checked
+    - **I acknowledge that connecting to an Azure Cognitive Search account will incur usage to my account**: checked
 
-    ![](media/openai-lab06_t4_s7_add_data.png "Add data configurations")
+       ![](media/image456.png "Add data configurations")
 
 1. On the **Upload files** page, select **Browse for a file** and upload the PDFs you downloaded, and then select **Upload files** and 
     **Next**.
       
-    ![](media/openai-lab06_t4_s8_uploadfiles.png "Upload files")
+    ![](media/image312.png "Upload files")
 
 1. On the **Data management** page select the **Keyword** search type from the drop-down, and then select **Next**.
-1. On the **Review and finish** page select **Save and close**, which will add your data. This may take a few minutes, during which you need to leave your window open. Once completed, verify if the data source, search resource, and index specified **margiestravel** is present under the **Add your data(preview)** tab in **Assistant setup** pane.
+1. On the **Review and finish** page select **Save and close**, which will add your data. This may take a few minutes, during which you need to leave your window open. Once completed, verify if the data source, search resource, and index specified **cognitive-search-index** is present under the **Add your data(preview)** tab in **Assistant setup** pane.
    
-  **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
 ### Task 3: Chat with a model grounded in your data
 
@@ -110,6 +106,6 @@ Try asking it about other cities included in the grounding data, which are Dubai
 ## Review
 
 In this lab, you have accomplished the following:
--   Use the power of OpenAI models to generate responses limited to a custom ingested data.
+-   Use the power of OpenAI models to generate responses limited to custom ingested data.
 
-### You have successfully completed the lab.
+## Proceed to Exercise 7

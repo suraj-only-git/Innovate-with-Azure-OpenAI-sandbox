@@ -20,7 +20,7 @@ In this lab, you will complete the following tasks:
 Before using in your app, examine how Azure OpenAI can generate and explain code in the chat playground.
 
 1. In [Azure OpenAI Studio](https://oai.azure.com/?azure-portal=true), navigate to the **Chat** playground in the left pane.
-1. In the **Assistant setup** section at the top, select the **Default** system message template and click on continue.
+1. In the **Assistant setup** section at the top, select the **Default** system message template.
 1. Scroll down and in the **Chat session** section, enter the following prompt and press *Enter*.
 
     ```code
