@@ -476,4 +476,4 @@ If you would like to see the full response from Azure OpenAI, you can set the `p
 In this lab, you have accomplished the following:
 -   Use the functionalites of the Azure OpenAI to generate and improvise code for your production applications.
 
-### You have successfully completed the lab.
+## Proceed to Exercise 4c
