@@ -366,7 +366,7 @@ In this lab you have completed the following tasks:
 - Task 5: Elements of a Prompt
 - Task 6: General Tips for Designing Prompts
 
-## Proceed to Exercise 4
+## Proceed to Exercise 4a
 
  
 
