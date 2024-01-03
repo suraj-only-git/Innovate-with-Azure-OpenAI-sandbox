@@ -151,7 +151,7 @@ Now that you've reviewed the code, it's time to run it and generate some images.
 ### Review
 
 In this lab, you have accomplished the following:
--   understand the concepts of image generation via the DALL-E model.
+-   Understand the concepts of image generation via the DALL-E model.
 -   Implement image-generation into your applications using this model
 
 ### Proceed to Exercise 5
