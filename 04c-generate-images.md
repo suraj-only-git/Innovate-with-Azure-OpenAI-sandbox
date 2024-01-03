@@ -21,27 +21,13 @@ In this lab, you will complete the following tasks:
 
 You can use the DALL-E playground in **Azure OpenAI Studio** to experiment with image generation.
 
-1. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
+1. Back in the **Azure OpenAI Studio** ,from the left navigation pane, select the **DALL-E Playground**.
 
-   ![](media/openai8.png)
+2. In the **Prompt** box, enter a description of an image you'd like to generate. For example, *An elephant on a skateboard*. Then select **Generate** and view the image that is generated.
 
-2. On **Azure AI Services | Azure OpenAI** blade, select **OpenAI-Lab05-<inject key="Deployment-id" enableCopy="false"></inject>**
-
-   ![](media/OpenAI_select.png)
-
-3. In the Azure OpenAI resource pane, click on **Go to Azure OpenAI Studio** it will navigate to **Azure AI Studio**.
-
-   ![](media/openai_studio.png)
-
-4. From the left navigation pane, select the **DALL-E Playground**.
-
-5. In the **Prompt** box, enter a description of an image you'd like to generate. For example, *An elephant on a skateboard*. Then select **Generate** and view the image that is generated.
-
-    **Note :** Please use a resource in East US region to use DALL·E 2 or use a resource in Sweden Central region to use DALL·E
-   
     ![The DALL-E Playground in Azure OpenAI Studio with a generated image.](media/e1.png)
 
-7. Modify the prompt to provide a more specific description. For example *An elephant on a skateboard in the style of Picasso*. Then generate the new image and review the results.
+3. Modify the prompt to provide a more specific description. For example *An elephant on a skateboard in the style of Picasso*. Then generate the new image and review the results.
 
     ![The DALL-E Playground in Azure OpenAI Studio with two generated images.](media/e2.png)
 
@@ -57,28 +43,9 @@ In this exercise, you'll use a simple Python or Microsoft C# app to generate ima
 
     ![Screenshot of starting Cloud Shell by clicking on the icon to the right of the top search box.](media/cloudshell-launch-portal.png#lightbox)
 
-2. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **Bash**. If you don't see this option, skip the step.  
+2. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *Bash*. If it's *PowerShell*, switch to *Bash* by using the drop-down menu.
 
-3. If you're prompted to create storage for your Cloud Shell, ensure your subscription is specified and then select **Advanced settings**.
-
-   ![](media/openai-labs_createstoragepane.png "Create storage advanced settings")
-
-    > **Note**: If you already have a cloud shell set up in your Azure subscription, you may need to use the **Reset user settings** option in the ⚙️ menu to ensure the latest versions of Python and the .NET Framework are installed.
-
-4. Within the **Advanced settings** pane, enter the following details and then click on **Create storage**:
-    - **Subscription**: Default- Choose the only existing subscription assigned for this lab.
-    - **CloudShell region**: Select <inject key="Region" enableCopy="false" />
-    - **Resource group**: Select **Use existing**.
-      - labvm-rg-<inject key="Deployment-id" enableCopy="false"></inject>
-    - **Storage account**: Select **Create new**.
-      - storage<inject key="Deployment-id" enableCopy="false"></inject>
-    - **File share**: Create a new file share named **none**
-
-   ![](media/openai-labs_advancedsettings_config.png "Create storage advanced settings")
-
-5. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *Bash*. If it's *PowerShell*, switch to *Bash* by using the drop-down menu.
-
-6. Once the terminal starts, enter the following command to download the application code you are going to work with.
+3. Once the terminal starts, enter the following command to download the application code you are going to work with.
 
     ```bash
    rm -r azure-openai -f
@@ -87,7 +54,7 @@ In this exercise, you'll use a simple Python or Microsoft C# app to generate ima
 
     The files are downloaded to a folder named **azure-openai**. Applications for both C# and Python have been provided. Both apps feature the same functionality.
 
-7. Navigate to the folder for the language you want to use by running the appropriate command.
+4. Navigate to the folder for the language you want to use by running the appropriate command.
 
     **Python**
 
@@ -101,7 +68,7 @@ In this exercise, you'll use a simple Python or Microsoft C# app to generate ima
    cd azure-openai/Labfiles/05-image-generation/CSharp
     ```
 
-8. Use the following command to open the built-in code editor and see the code files you will be working with.
+5. Use the following command to open the built-in code editor and see the code files you will be working with.
 
     ```bash
    code .
@@ -118,9 +85,11 @@ The application uses a configuration file to store the details needed to connect
     
 2. Update the configuration values to include the **Endpoint** and **Key1** for your Azure OpenAI service. Then save the file by right-clicking the file from the left pane.
 
-    > **Tip**: You can adjust the split at the top of the cloud shell pane to see the Azure portal, and get the endpoint and key values from the **Keys and Endpoint** page for your Azure OpenAI service.
+     >**Note:** Copy the Endpoint and Key value from the Ex 4a Task 1 step number 2.
+     
+     > **Tip**: You can adjust the split at the top of the cloud shell pane to see the Azure portal, and get the endpoint and key values from the **Keys and Endpoint** page for your Azure OpenAI service.
 
-3. If you are using **Python**, you'll also need to install the **python-dotenv** package used to read the configuration file. In the console prompt pane, ensure the current folder is **~/azure-openai/Labfiles/05-image-generation/Python**. Then enter this command:
+4. If you are using **Python**, you'll also need to install the **python-dotenv** package used to read the configuration file. In the console prompt pane, ensure the current folder is **~/azure-openai/Labfiles/05-image-generation/Python**. Then enter this command:
 
     ```bash
    pip install python-dotenv
