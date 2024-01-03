@@ -135,9 +135,6 @@ Now you're ready to explore the code used to call the REST API and generate an i
     - Python: `generate-image.py`
 
 2. Review the code that the file contains, noting the following key features:
-
-   >**Note** : right-click on the file from the left pane, and hit **Save**
-   
     - The code makes https requests to the endpoint for your service, including the key for your service in the header. Both of these values are obtained from the configuration file.
     - The process consists of <u>two</u> REST requests: One to initiate the image-generation request, and another to retrieve the results.
     The initial request includes the following data:
