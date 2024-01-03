@@ -66,7 +66,7 @@ To show how to integrate with an Azure OpenAI model, we'll use a short command-l
     - **Subscription**: Default- Choose the only existing subscription assigned for this lab (1).
     - **CloudShell region**: select **<inject key="Region" enableCopy="false" />** (2)
     - **Resource group**: Select **Use existing**.(3)
-      - labvm-rg-<inject key="Deployment ID" enableCopy="false"></inject>
+      - OpenAI
     - **Storage account**: Select **Create new**.(4)
       - storage<inject key="Deployment ID" enableCopy="false"></inject>
     - **File share**: Create a new file share named **none** (5)
@@ -76,7 +76,7 @@ To show how to integrate with an Azure OpenAI model, we'll use a short command-l
 
 5. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *Bash*. If it's *PowerShell*, switch to *Bash* by using the drop-down menu.
 
-6. Once the terminal starts, enter the following command to download the sample application and save it to a folder called `azure-openai`.
+6. Once the terminal starts, enter the following command to download the sample application.
 
     ```bash
    rm -r azure-openai -f
@@ -115,6 +115,8 @@ For this exercise, you'll complete some key parts of the application to enable u
     - **Python**: `.env`
 
 3. Update the configuration values to include the **endpoint** and **key** from the Azure OpenAI resource you created, as well as the name of your deployment, `35turbo`. Then save the file by right-clicking on the file from the left pane and hit **Save**.
+
+    >**Note:** Copy the Endpoint and Key value from the Ex 4a Task 1 step number 2.
 
 4. Navigate to the folder for your preferred language and install the necessary packages.
 
