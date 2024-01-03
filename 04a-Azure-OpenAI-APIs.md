@@ -17,13 +17,13 @@ In this lab, you will perform:
 
 ## Task 1: Fetch the OpenAI Key and Endpoint Values
 
-1. Naviagte to the  [Azure portal](http://portal.azure.com/), search and select **Azure OpenAI**, from the **Azure AI Services | Azure OpenAI pane**, select the **OpenAI-<inject key="Deployment ID" enableCopy="false"></inject>**.
+1. Navigate to the  [Azure portal](http://portal.azure.com/), search and select **Azure OpenAI**, from the **Azure AI Services | Azure OpenAI pane**, select the **OpenAI-<inject key="Deployment ID" enableCopy="false"></inject>**.
 
 1. Now select **Keys and Endpoints** **(1)** under Resource Management and click on **Show Keys** **(2)**. Copy the **KEY 1** **(3)** and **Endpoint** **(4)**, and store them in a text file for later use.
 
-   ![](images/keyimg.png)
+   ![](media/keyimg.png "Deploy model configurations")
 
-### Task 2: Setup configuration for Integrating AI
+## Task 2: Setup configuration for Integrating AI
 
 1. Open **Visual Studio Code** from the Lab VM desktop by double-clicking on it.
 
@@ -46,15 +46,14 @@ In this lab, you will perform:
    | **Variables**                            | **Values**                                                                              |
    | ---------------------------------------- |-----------------------------------------------------------------------------------------|
    | OPENAI_API_TYPE                          |  **azure**                                                                              |
-   | OPENAI_API_KEY                           | Replace the value with the **AZURE OPENAI API KEY** which you noted in Task 2 step 3    |
-   | OPENAI_API_BASE                          | Replace the value with the **AZURE OPENAI ENDPOINT** which you noted in Task 2 step 3   |
-   | OPENAI_COMPLETION_MODEL                  | **gpt-35-turbo**                                                                        |
-   | AZURE_OPENAI_COMPLETION_DEPLOYMENT_NAME  | **gpt-35-turbo**                                                                        |
+   | OPENAI_API_KEY                           | Replace the value with the **AZURE OPENAI API KEY** which you noted in Task 1 step 2    |
+   | OPENAI_API_BASE                          | Replace the value with the **AZURE OPENAI ENDPOINT** which you noted in Task 1 step 2   |
+   | OPENAI_COMPLETION_MODEL                  | **gpt-35-turbo-16k**                                                                        |
+   | AZURE_OPENAI_COMPLETION_DEPLOYMENT_NAME  | **gpt-35-turbo-16k**                                                                        |
    | AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME   | **text-embedding-ada-002**                                                              |
 
-   > **Note**: Please make sure to remove **/** From the **OPENAI_API_BASE**.
-
-   ![](media/updateenv.png "Deploy model configurations")
+   ![](media/black.png "Deploy model configurations")
+   > **Note:** Please make sure to remove **/** From the **OPENAI_API_BASE**.
 
 ### Task 3: Azure OpenAI API
 
@@ -64,7 +63,7 @@ In this Task, we'll walk through showing how to interact with an Azure OpenAI AP
 
    ![](media/azure-openai-api.png "Deploy model configurations")
 
-1. From the right corner click on **select Kernal** and on the Choose a Kernel source pop-up, select **Python Environment**. This will initiate the installation of the extension.
+1. From the right corner click on **Select Kernal** and on the Choose a Kernel source pop-up, select **Python Environment**. This will initiate the installation of the extension.
 
    ![](media/select-kernal.png "Deploy model configurations")
 
