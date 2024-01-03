@@ -17,11 +17,41 @@ In this lab, you will complete the following tasks:
 
   ![](media/lab-05-ad.png "Architecture Diagram")
 
-## Task 1: Explore image generation in the DALL-E playground
+## Task 1: Create an Azure OpenAI Resource
+
+1. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
+
+   ![](media/openai8.png)
+
+2. On **Azure AI Services | Azure OpenAI** blade, click on **Create**.
+
+   ![](media/openai_create.png)
+
+3. Create an **Azure OpenAI** resource with the following settings:
+   
+    - **Subscription**: Default - Pre-assigned subscription. (1)
+    - **Resource group**: OpenAI (2)
+    - **Region**: East US
+    - **Name**: dalle-openai-<inject key="Deployment ID" enableCopy="false"></inject> (4)
+    - **Pricing tier**: Standard S0 (5)
+  
+      ![](media/dalle2.png)
+      
+      >**Note:** Kindly select the East US region only as the resources are region-specific.
+
+4. Keep rest as default click on Next thrice and subsequently click on **Create** 
+5. Wait for deployment to complete. Then click on  **Go to Resource**.
+3. In the Azure OpenAI resource pane, click on **Go to Azure OpenAI Studio** it will navigate to **Azure AI Studio**.
+
+   ![](media/1dallegoto1.png)
+
+
+
+## Task 2: Explore image generation in the DALL-E playground
 
 You can use the DALL-E playground in **Azure OpenAI Studio** to experiment with image generation.
 
-1. Back in the **Azure OpenAI Studio** ,from the left navigation pane, select the **DALL-E Playground**.
+1. In the **Azure OpenAI Studio** ,from the left navigation pane, select the **DALL-E Playground**.
 
 2. In the **Prompt** box, enter a description of an image you'd like to generate. For example, *An elephant on a skateboard*. Then select **Generate** and view the image that is generated.
 
@@ -85,7 +115,7 @@ The application uses a configuration file to store the details needed to connect
     
 2. Update the configuration values to include the **Endpoint** and **Key1** for your Azure OpenAI service. Then save the file by right-clicking the file from the left pane.
 
-     >**Note:** Copy the Endpoint and Key value from the Ex 4a Task 1 step number 2.
+     >**Note:** Copy the Endpoint and Key value for the **dalle-openai-<inject key="Deployment ID" enableCopy="false"></inject** from the Azure portal.
      
      > **Tip**: You can adjust the split at the top of the cloud shell pane to see the Azure portal, and get the endpoint and key values from the **Keys and Endpoint** page for your Azure OpenAI service.
 
