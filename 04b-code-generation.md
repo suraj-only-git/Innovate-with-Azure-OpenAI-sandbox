@@ -1,21 +1,25 @@
 # Exercise 4B: Generate and improve code with Azure OpenAI Service
 
-### Lab scenario
-The Azure OpenAI Service models can generate code for you using natural language prompts, fixing bugs in completed code, and providing code comments. These models can also explain and simplify existing code to help you understand what it does and how to improve it.
+ This exercise focuses on exploring how Azure OpenAI models can contribute to code generation, comprehension, and enhancement.
 
-### Lab objectives
-In this lab, you will complete the following tasks:
+## Lab scenario
 
-- Task 1: Generate code in chat playground
-- Task 2: Set up an application in Cloud Shell
-- Task 3: Configure your application
-- Task 4: Run your application
+Contoso is on a mission to transform its code generation process with the help of Azure OpenAI Service. In this exercise, we'll delve into various approaches to enhance code quality and creativity.
+
+## Lab objectives
+
+In this lab, you will complete the following :
+
+- Generate code in the chat playground
+- Set up an application in Cloud Shell
+- Configure your application
+- Run your application
 
 ## Architecture Diagram
 
   ![](media/lab-04-ad.png "Architecture Diagram")
 
-### Task 1: Generate code in chat playground
+## Task 1: Generate code in chat playground
 
 Before using in your app, examine how Azure OpenAI can generate and explain code in the chat playground.
 
@@ -48,7 +52,7 @@ Before using in your app, examine how Azure OpenAI can generate and explain code
 
 1. Observe the output, which explains what the function does in natural language. Try asking the model to rewrite it in a language you are familiar with.
 
-### Task 2: Set up an application in Cloud Shell
+## Task 2: Set up an application in Cloud Shell
 
 To show how to integrate with an Azure OpenAI model, we'll use a short command-line application that runs in Cloud Shell on Azure. Open up a new browser tab to work with Cloud Shell.
 
@@ -103,7 +107,7 @@ To show how to integrate with an Azure OpenAI model, we'll use a short command-l
      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
      > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
-### Task 3: Configure your application
+## Task 3: Configure your application
 
 For this exercise, you'll complete some key parts of the application to enable using your Azure OpenAI resource.
 
@@ -430,7 +434,7 @@ For this exercise, you'll complete some key parts of the application to enable u
    ```
 10. To save the changes made to the file, right-click on the file from the left pane, and hit **Save**
 
-### Task 4: Run your application
+## Task 4: Run your application
 
 Now that your app has been configured, run it to try generating code for each use case. The use case is numbered in the app, and can be run in any order.
 
@@ -473,9 +477,10 @@ It's important to note that even though the code for this Go Fish app was correc
 
 If you would like to see the full response from Azure OpenAI, you can set the `printFullResponse` variable to `True`, and rerun the app.
 
-### Review
+## Review
 
-In this lab, you have accomplished the following:
--   Use the functionalites of the Azure OpenAI to generate and improvise code for your production applications.
+In this exercise, you have accomplished the following:
+-   Used the functionalities of the Azure OpenAI to generate 
+-   Improvised code for your production applications.
 
 ## Proceed to Exercise 4c
