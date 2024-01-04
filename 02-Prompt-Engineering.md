@@ -1,6 +1,10 @@
 # Exercise 2: Prompt Engineering practices
 
-Master the art of Prompt Engineering with Azure OpenAI Studio. In this exercise, you'll explore the concept of prompt engineering, learning how to craft effective prompts for AI models. You'll get hands-on experience with Azure OpenAI Playground, experimenting with different types of prompts and understanding their elements and design tips.
+Having crafted deployment models, let's now embark on the journey of discovering how Contoso can seamlessly incorporate the artistry of Prompt Engineering techniques.
+
+## Lab Scenario
+
+In this exercise, you will step into Contoso Corporation's AI lab, where you'll unravel Prompt Engineering using the deployment models created in the previous exercise, crafting powerful AI prompts in hands-on experiments at the cutting edge of innovation.
 
 ## Lab objectives
 
@@ -14,7 +18,11 @@ In this lab, you will perform:
 
    ![](media/arch1.png)
 
-### Task 1: German Translation
+## What is Prompt Engineering?
+
+Prompt engineering is a relatively [new discipline](https://www.businessinsider.com/prompt-engineering-ai-chatgpt-jobs-explained-2023-3) for developing and optimizing prompts to efficiently use language models (LMs) across a wide variety of business applications. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs) and refine the completions (outputs) of LLMs. Prompt engineering is used to improve the capacity of LLMs on a wide range of common and complex tasks, such as question answering and arithmetic reasoning. Developers use prompt engineering to design robust and effective prompting techniques that interface with LLMs and other tools.
+
+## Task 1: German Translation
 
 1. In [Azure OpenAI Studio](https://oai.azure.com/?azure-portal=true), navigate to the **Chat** playground in the left pane.
 
@@ -44,7 +52,7 @@ In this lab, you will perform:
 
    > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
-### Task 2: Negation
+## Task 2: Negation
 
 1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save changes**.
 
@@ -64,7 +72,7 @@ In this lab, you will perform:
 
    >**Note:** Chat may not respond with the exact output as shown in the screenshots.   
 
-### Task 3: Classification
+## Task 3: Classification
 
 1. In the **Assistant setup** section at the top, enter the following as the system message.
 
@@ -100,7 +108,7 @@ In this lab, you will perform:
 
    > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
-### Task 4: E-Mail Summarization 
+## Task 4: E-Mail Summarization 
 
 1. In the **Assistant setup** section at the top, enter the following as the system message.
 
@@ -126,7 +134,7 @@ In this lab, you will perform:
 
    > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
-### Task 5: Rewriting
+## Task 5: Rewriting
 
 1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save changes**.
 
@@ -146,7 +154,7 @@ In this lab, you will perform:
 
    > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
-### Task 6: Multiple Tasks
+## Task 6: Multiple Tasks
 
 1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save changes**.
 
@@ -167,7 +175,7 @@ In this lab, you will perform:
 
    > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
-### Task 7: Data extraction to JSON
+## Task 7: Data extraction to JSON
 
 1. In the **Assistant setup** section at the top, enter the following as the system message.
 
@@ -208,7 +216,7 @@ In this lab, you will perform:
 
    > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
-### Task 8: Fashion product description  
+## Task 8: Fashion product description  
 
 1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save changes**.
 
@@ -233,7 +241,7 @@ In this lab, you will perform:
 
    > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
-### Task 9: Write a Blog Post
+## Task 9: Write a Blog Post
 
 1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save changes**.
 
@@ -253,7 +261,7 @@ In this lab, you will perform:
 
    > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
-### Task 10: Call Center
+## Task 10: Call Center
 
 1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save**.
 
@@ -283,7 +291,7 @@ In this lab, you will perform:
 
    > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
-### Task 11: Few-shot learning 
+## Task 11: Few-shot learning 
 
 1. In the **Assistant setup** section at the top, enter the following as the system message.
 
@@ -321,7 +329,7 @@ In this lab, you will perform:
 
    > **Note:** Chat may not respond with the exact output as shown in the screenshots.
 
-### Task 12: NL to SQL with Codex
+## Task 12: NL to SQL with Codex
 
 1. In the **Assistant setup** section at the top, enter the following as the system message and click on **Save changes**.
 
@@ -346,18 +354,9 @@ In this lab, you will perform:
 
 ## Review
 
-In this exercise you have completed the following tasks:
-- Task 1: German Translation
-- Task 2: Negation
-- Task 3: Classification
-- Task 4: E-Mail Summarization
-- Task 5: Rewriting
-- Task 6: Multiple Tasks
-- Task 7: Data extraction to JSON
-- Task 8: Fashion product description
-- Task 9: Write a Blog Post
-- Task 10: Call Center
-- Task 11: Few-shot learning
-- Task 12: NL to SQL with Codex
+In this exercise you have accomplished the following:
+- Achieved varied tasks from translation to SQL generation.
+- Demonstrated versatility in scenarios like email and call center.
+- Applied Few-shot learning and Codex for nuanced tasks
 
 ## Proceed to Exercise 3
