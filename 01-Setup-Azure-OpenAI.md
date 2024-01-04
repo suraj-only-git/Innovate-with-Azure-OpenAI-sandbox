@@ -9,9 +9,9 @@ Welcome to Contoso Corporation's AI exploration lab! In this exercise, you'll em
 ## Lab Objective
 
 In this exercise, you will perform the following tasks:
-- Task 1: Deploy Azure OpenAI Model.
-- Task 2: Deploy a model
-- Task 3: Explore Azure AI Studio
+- Deploy Azure OpenAI Model.
+- Deploy a model
+- Explore Azure AI Studio
 
 ## Task 1: Deploy Azure OpenAI Model.
 
