@@ -176,7 +176,7 @@ Now that you've reviewed the code, it's time to run it and generate some images.
 
 4. Close the tab containing the generated image and re-run the app to generate a new image with a different prompt.
 
-### Review
+## Review
 
 In this lab, you have accomplished the following:
 -   Understood the concepts of image generation via the DALL-E model.
