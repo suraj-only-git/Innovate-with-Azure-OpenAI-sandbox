@@ -121,10 +121,10 @@ You can deploy, manage, and explore models in your Azure OpenAI Service by using
 
 ## Review
 
-In this exercise, you accomplished:
+In this exercise, you accomplished the following:
 
-- Deploying an Azure OpenAI Model
-- Deploying multiple models with varying capabilities
-- Exploring Azure AI Studio features for model management and experimentation
+- Deployed an Azure OpenAI Model
+- Deployed multiple models with varying capabilities
+- Explored Azure AI Studio features for model management and experimentation
 
 ## Proceed to Exercise 2
