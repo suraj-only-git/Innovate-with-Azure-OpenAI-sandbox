@@ -112,9 +112,4 @@ In this lab, you have accomplished the following:
 - Integrated custom data into the model to observe enhanced responses.
 - Examined the model's adaptability and tailored outputs showcasing personalized responses.
 
-## Proceed to 
-
-
-
-
 ## Proceed to Exercise 7
