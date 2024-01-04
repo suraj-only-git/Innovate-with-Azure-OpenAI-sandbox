@@ -15,7 +15,7 @@ OpenAI's powerful language models like GPT-3 through API calls with Azure servic
 
 ## Sandbox Scenario
 
-Contoso Corporation revolutionized its engineering practices by synergizing Microsoft Azure and OpenAI. They tailored Azure OpenAI service hyperparameters, optimizing AI models for data analytics and task automation. The company programmatically harnessed Azure OpenAI's capabilities, utilizing Python to interact with APIs, generating and refining code. This extended to generating images with a DALL-E model, showcasing versatility in both text and visual domains. Contoso delved into natural language processing (NLP) by integrating ChatGPT on SQL Engine through Azure OpenAI, enhancing data analysis and insights extraction. Leveraging their own data and exploring content filters, Contoso personalized AI applications. They adopted knowledge mining with Azure Cognitive Search, extracting valuable insights from extensive datasets. Building their own Copilot, including a semantic kernel and deploying a Chat Copilot application, reflected Contoso's commitment to advanced, integrated AI-driven development practices.
+Contoso Corporation revolutionized its engineering practices by synergizing Microsoft Azure and OpenAI. They tailored Azure OpenAI service hyperparameters, optimizing AI models for data analytics and task automation. The company programmatically harnessed Azure OpenAI's capabilities, utilizing Python to interact with APIs, and generating and refining code. This extended to generating images with a DALL-E model, showcasing versatility in both text and visual domains. Contoso delved into natural language processing (NLP) by integrating ChatGPT on SQL Engine through Azure OpenAI, enhancing data analysis and insights extraction. Leveraging their own data and exploring content filters, Contoso personalized AI applications. They adopted knowledge mining with Azure Cognitive Search, extracting valuable insights from extensive datasets. Building their own Copilot, including a semantic kernel and deploying a Chat Copilot application, reflected Contoso's commitment to advanced, integrated AI-driven development practices.
 
 ## About the Sandbox
 
@@ -47,16 +47,16 @@ Using this environment, You'll be able to explore complete features and offering
 
 #### **Duration and Deletion of sandbox**:  
 
-- The sandbox environment will be active for **14 days/730** hours from the time of registration. 
+- The sandbox environment will be active for **14 days/336** hours from the time of registration. 
 - The allowed uptime of the virtual machine is **40 hours**.
 - The virtual machines will automatically **shut down** if not in use or if virtual machines are left idle. This feature is enabled in virtual machines to minimize the Azure spend.
-- when 100% of Azure credits are spent, the sandbox environment will get automatically deleted without any prior notification. To retain the environment for a longer period and to get the most out of the environment, please follow the best practices mentioned below.
+- When 100% of Azure credits are spent, the sandbox environment will get automatically deleted without any prior notification. To retain the environment for a longer period and to get the most out of the environment, please follow the best practices mentioned below.
 
 #### **Best practices**: 
 
 - **Resources usage**: Please stop the virtual machines and other resources when not in use to minimize the Azure spend.
 
-- **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription often in check the Azure spend so that environment for a longer duration of time.
+- **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription often in check the Azure spend so that the environment is for a longer duration of time.
 
 - **Alert notifications**: Make sure to check your registered email's inbox for any alert-related mails. Alerts give you can head start to keep your Azure spending in control and to plan out the remaining credits in the best way possible.
 
