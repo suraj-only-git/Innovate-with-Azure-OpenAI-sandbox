@@ -20,10 +20,6 @@ This application demonstrates the of Open AI (ChatGPT/GPT-4) to help answer busi
 
 The application supports Python's built-in SQLite as well as your own Microsoft SQL Server.
 
-## Exercise 1: Open AI Setup and Installation of Application
-
-In this exercise, you will be setting up the Open AI resource and installation of the application to Azure.
-
 ## Task 1: Review Open AI resource
 
 1. Naviagte back to [Azure portal](http://portal.azure.com/), search and select **Azure OpenAI**, from the **Azure AI Services | Azure OpenAI pane**, select the **OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
@@ -108,9 +104,7 @@ In this exercise, you will be setting up the Open AI resource and installation o
 
 15. Click the **Next** button located in the bottom right corner of this lab guide to continue with the next exercise.
 
-# Exercise 2: Quick Start With Hosted Demo Application.
-
-## Task 1: Analyzing Data Analysis Assistant and SQL Query Writing Assistant
+## Task 3: Analyzing Data Analysis Assistant and SQL Query Writing Assistant
 
 1. When you're on the **Natural Language Query** page, click on **Settings (1)** from the left side menu. Enter **ChatGPT deployment name** as **sql-chatgpt-model (2)**, enter **GPT-4 deployment name** as **sql-chatgpt-model (3)**, enter **Azure OpenAI Endpoint** as **Endpoint (4)** which you have saved in previous task, and **Azure OpenAI Key** as **Key (5)** which you have saved in previous task have all been filled in. Click on **Submit(6)** to save the changes.
 
