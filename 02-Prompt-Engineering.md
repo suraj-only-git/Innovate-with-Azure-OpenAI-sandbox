@@ -8,7 +8,7 @@ In this exercise, you will step into Contoso Corporation's AI lab, where you'll 
 
 ## Lab objectives
 
-In this lab, you will perform:
+In this lab, you will perform the following:
 
 - Provision an Azure OpenAI resource
 - Deploy a model
