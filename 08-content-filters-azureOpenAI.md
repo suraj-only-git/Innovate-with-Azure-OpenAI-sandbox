@@ -1,15 +1,15 @@
 # Exercise 7: Explore content filters in Azure OpenAI
+ 
+ In this exercise you will discover how the interplay between system messages and content filters shapes the model's responses, ensuring a responsible and respectful AI experience.
 
 ## Lab scenario
-Azure OpenAI includes default content filters to help ensure that potentially harmful prompts and completions are identified and removed from interactions with the service. Additionally, you can apply for permission to define custom content filters for your specific needs to ensure your model deployments enforce the appropriate responsible AI principals for your generative AI scenario. Content filtering is one element of an effective approach to responsible AI when working with generative AI models.
-
-In this exercise, you'll explore the affect of the default content filters in Azure OpenAI.
+Contoso is leveraging Azure OpenAI to enhance its customer support chatbot. In this scenario, Contoso aims to explore the default content filters provided by Azure OpenAI to ensure responsible AI practices in customer interactions. 
 
 ## Lab objectives
-In this lab, you will complete the following tasks:
+In this lab, you will complete the following :
 
-- Task 1: Generate natural language output
-- Task 2: Explore content filters
+- Generate natural language output
+- Explore content filters
 
 ## Architecture Diagram
 
@@ -17,7 +17,7 @@ In this lab, you will complete the following tasks:
 
 ## Estimated time: 30 minutes
 
-### Task 3: Generate natural language output
+### Task 1: Generate natural language output
 
 Let's see how the model behaves in a conversational interaction.
 
@@ -46,7 +46,7 @@ Let's see how the model behaves in a conversational interaction.
 
 1. Observe the output, which should hopefully indicate that the request to be racist and derogative is not supported. This prevention of offensive output is the result of the default content filters in Azure OpenAI.
 
-### Task 4: Explore content filters
+### Task 2: Explore content filters
 
 Content filters are applied to prompts and completions to prevent potentially harmful or offensive language being generated.
 
@@ -72,4 +72,4 @@ In this lab, you have accomplished the following:
 -   Use the power of OpenAI models to generate responses to generate natural language output.
 -   Explore content filters.
 
-### You have successfully completed the lab.
+## Proceed to Exercise 8
