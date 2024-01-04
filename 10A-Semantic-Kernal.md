@@ -1,14 +1,13 @@
 # Exercise 9A: Semantic Kernal
 
-## Introduction
+In this exercise, you will explore the Semantic Kernel's capabilities  by dynamically generating prompts, writing code-based prompts, and creating interactive demos seamlessly. 
 
-In the prior, you effectively deployed models within the Azure OpenAI service. Now, in this subsequent challenge, your exploration will focus on Semantic Kernel by running Python/dotnet Jupyter notebooks.
-
-The open-source Semantic Kernel streamlines the amalgamation of AI services, including OpenAI, Azure OpenAI, and Hugging Face, into traditional programming languages like C# and Python.
+## Lab Scenario
+Contoso aims to leverage the Semantic Kernel to seamlessly integrate OpenAI, Azure OpenAI, and Hugging Face within their existing Python and C# workflows. The objective is to dynamically generate prompts using complex rules at runtime, edit prompts directly in code, and effortlessly create engaging demos for various applications, fostering a more flexible and efficient AI development environment.
 
 ## Lab objectives
 
-In this lab, you will perform:
+In this lab, you will perform the following:
 
 - Dynamically generating the prompt using complex rules at runtime
 - Writing prompts by editing Python code instead of TXT files.
@@ -96,3 +95,13 @@ In this lab, you will perform:
 8. **Execute the notebook cell by cell** (using either Ctrl + Enter to stay on the same cell or Shift + Enter to advance to the next cell) and observe the **results of each cell** execution.
   
      ![](media/img006.png)
+## Review
+In this exercise you have accomplished the following:
+- Explored Semantic Kernel for dynamic prompt generation and Python code editing.
+- Integrated AI services like OpenAI and Azure into familiar languages like C# and Python.
+
+## Proceed to Exercise 9b
+
+
+
+

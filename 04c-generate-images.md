@@ -1,17 +1,18 @@
 # Exercise 4c: Generate images with a DALL-E model
+In this exercise, you will explore the potential of image generation with Azure OpenAI Service's DALL-E model. Generate original images using natural language prompts through the DALL-E Playground and REST API, enhancing your applications with AI-driven content creation.
 
-### Lab scenario
-The Azure OpenAI Service includes an image-generation model named DALL-E. You can use this model to submit natural language prompts that describe a desired image, and the model will generate an original image based on the description you provide.
+## Lab scenario
+Contoso aims to explore the potential of generating original images by submitting natural language prompts to the DALL-E model.This lab empowers Contoso to integrate advanced image-generation capabilities into their applications, allowing them to explore creative and practical use cases for AI-driven content creation.
 
-### Lab objectives
-In this lab, you will complete the following tasks:
+## Lab objectives
+In this lab, you will complete the following :
 
-- Task 1: Explore image-generation in the DALL-E playground
-- Task 2: Use the REST API to generate images
-- Task 2.1: Prepare the app environment
-- Task 2.2: Configure your application
-- Task 2.3: View application code
-- Task 3: Run the app
+- Explore image generation in the DALL-E playground
+- Use the REST API to generate images
+- Prepare the app environment
+- Configure your application
+- View application code
+- Run the app
 
 ## Architecture Diagram
 
@@ -175,10 +176,10 @@ Now that you've reviewed the code, it's time to run it and generate some images.
 
 4. Close the tab containing the generated image and re-run the app to generate a new image with a different prompt.
 
-### Review
+## Review
 
 In this lab, you have accomplished the following:
--   Understand the concepts of image generation via the DALL-E model.
--   Implement image-generation into your applications using this model
+-   Understood the concepts of image generation via the DALL-E model.
+-   Implemented image-generation into your applications using this model
 
 ### Proceed to Exercise 5

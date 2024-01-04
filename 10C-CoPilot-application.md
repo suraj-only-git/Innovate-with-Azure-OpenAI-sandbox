@@ -1,5 +1,16 @@
 # Exercise 9C: Deploy a Chat CoPilot application based on Semantic Kernal
 
+In this exercise, you will delve into deploying a Chat CoPilot application using Semantic Kernel, a powerful fusion of Azure OpenAI, OpenAI, and Hugging Face services.
+
+## Lab Scenario
+Contoso is exploring advanced AI integration for its development team. In this scenario, they aim to deploy a Chat CoPilot application using Semantic Kernel, seamlessly combining Azure OpenAI, OpenAI, and Hugging Face services. 
+
+## Lab Objectives
+
+In this exercise, you will perform the following:
+- Deploy a Chat CoPilot application using Semantic Kernel.
+- Configure both backend and frontend components for a collaborative coding environment.
+
 ## Task 1: Deployment of Chat CoPilot application
 
 1. In the LabVM, click on **Start**, from the start menu search and select for **PowerShell 6**. 
@@ -77,3 +88,12 @@
 1. Now **Chat Copilot** application is ready to use you can ask any question Chat Copilot will response accoundingly.
 
       ![](media/resultcopilot.png)
+
+## Review
+In this exercise you have accomplished the following:
+- Successfully configured and deployed Chat CoPilot application using Semantic Kernel.
+- Demonstrated effective integration of Azure OpenAI and Chat CoPilot for collaborative coding.
+
+## You have successfully completed the lab
+
+

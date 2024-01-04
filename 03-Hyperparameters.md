@@ -1,12 +1,18 @@
 # Exercise 3: Customizing Azure OpenAI Service Hyperparameters
 
-To begin exploring Azure OpenAI capabilities using a no-code approach, you can utilize the GPT-3 Playground. This web application features a simple text box where you can enter a prompt and generate a completion. The Playground allows you to easily iterate and experiment with the various capabilities offered by Azure OpenAI.
+In this exercise, you will learn how OpenAI Playground allows you to easily iterate and experiment with the different prompt engineering techniques using different hyperparameters.
 
->**Note:** Please be aware that the generated output may differ from the example provided in the lab guide.
+## Lab Scenario
+
+Now that we've explored the concept of prompt engineering, let's delve into the effective utilization of prompts within the OpenAI playground. Discovering these techniques will significantly benefit Contoso in optimizing its business operations.
+
+## Lab objectives
+
+In this lab, you will perform the following:
+- Try out Prompt Engineering with Azure OpenAI Playground
+- Learn about basic and standard prompt examples and demonstrate them
 
 ## Basic Overview of Azure OpenAI Service Hyperparameters
-
-## Quick Note on adjusting Hyperparameters
 
 When working with prompts, you will interact with the LLM via an API or directly. You can configure a few parameters to get different results for your prompts.
 
@@ -50,6 +56,8 @@ parameters for max response length and ending triggers as well. Note that stream
 Make responses stop at a desired point, such as the end of a sentence or list.
 Specify up to four sequences where the model will stop generating further tokens
 in a response. The returned text will not contain the stop sequence.
+
+>**Note:** Please be aware that the generated output may differ from the example provided in the lab guide.
 
 ## Task 1: Trying out Prompt Engineering with Azure OpenAI Playground
 
@@ -357,14 +365,10 @@ Some of the examples above were adopted from the ["Best practices for prompt eng
 
 ## Review
 
-In this lab you have completed the following tasks:
-
-- Task 1: Trying out Prompt Engineering with Azure OpenAI Playground
-- Task 2: Basic Prompt Examples
-- Task 3: Standard Prompts
-- Task 4: Demonstration of Prompts
-- Task 5: Elements of a Prompt
-- Task 6: General Tips for Designing Prompts
+In this lab you have accomplished the following:
+- Explored  prompt engineering
+- Explored diverse prompt formats
+- Learnt about comprehensive prompt design tips
 
 ## Proceed to Exercise 4a
 
