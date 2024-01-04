@@ -66,7 +66,7 @@ To show how to integrate with an Azure OpenAI model, we'll use a short command-l
     - **Subscription**: Default- Choose the only existing subscription assigned for this lab (1).
     - **CloudShell region**: select **<inject key="Region" enableCopy="false" />** (2)
     - **Resource group**: Select **Use existing**.(3)
-      - labvm-rg-<inject key="Deployment ID" enableCopy="false"></inject>
+      - OpenAI
     - **Storage account**: Select **Create new**.(4)
       - storage<inject key="Deployment ID" enableCopy="false"></inject>
     - **File share**: Create a new file share named **none** (5)
@@ -76,7 +76,7 @@ To show how to integrate with an Azure OpenAI model, we'll use a short command-l
 
 5. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *Bash*. If it's *PowerShell*, switch to *Bash* by using the drop-down menu.
 
-6. Once the terminal starts, enter the following command to download the sample application and save it to a folder called `azure-openai`.
+6. Once the terminal starts, enter the following command to download the sample application.
 
     ```bash
    rm -r azure-openai -f
@@ -114,7 +114,9 @@ For this exercise, you'll complete some key parts of the application to enable u
     - **C#**: `appsettings.json`
     - **Python**: `.env`
 
-3. Update the configuration values to include the **endpoint** and **key** from the Azure OpenAI resource you created, as well as the name of your deployment, `35turbo`. Then save the file by right-clicking on the file from the left pane and hit **Save**.
+3. Update the configuration values to include the **endpoint** and **key** from the Azure OpenAI resource you created, as well as the name of your deployment, `gpt-35-turbo-16k`. Then save the file by right-clicking on the file from the left pane and hit **Save**.
+
+    >**Note:** Copy the Endpoint and Key value from the Ex 4a Task 1 step number 2.
 
 4. Navigate to the folder for your preferred language and install the necessary packages.
 
@@ -338,91 +340,93 @@ For this exercise, you'll complete some key parts of the application to enable u
    **Python**
 
    ```python
-                import os
-                from dotenv import load_dotenv
+        
+        import os
+        from dotenv import load_dotenv
+        
+        # Add Azure OpenAI package
+        # Add OpenAI import
+        from openai import AzureOpenAI
+        # Set to True to print the full response from OpenAI for each call
+        printFullResponse = False
+        
+        def main(): 
                 
-                # Add Azure OpenAI package
-                # Add OpenAI import
-                from openai import AzureOpenAI
-                # Set to True to print the full response from OpenAI for each call
-                printFullResponse = False
+            try: 
+            
+                # Get configuration settings 
+                load_dotenv()
+                azure_oai_endpoint = os.getenv("AZURE_OAI_ENDPOINT")
+                azure_oai_key = os.getenv("AZURE_OAI_KEY")
+                azure_oai_model = os.getenv("AZURE_OAI_MODEL")
                 
-                def main(): 
-                        
-                    try: 
-                    
-                        # Get configuration settings 
-                        load_dotenv()
-                        azure_oai_endpoint = os.getenv("AZURE_OAI_ENDPOINT")
-                        azure_oai_key = os.getenv("AZURE_OAI_KEY")
-                        azure_oai_model = os.getenv("AZURE_OAI_DEPLOYMENT")
-                        
-                        # Configure the Azure OpenAI client
-                        # Set OpenAI configuration settings
-                        client = AzureOpenAI(
-                        azure_endpoint = azure_oai_endpoint, 
-                        api_key=azure_oai_key,  
-                        api_version="2023-05-15"
-                        )
-                
-                        while True:
-                            print('\n1: Add comments to my function\n' +
-                                '2: Write unit tests for my function\n' +
-                                '3: Fix my Go Fish game\n' +
-                                '\"quit\" to exit the program\n')
-                            command = input('Enter a number to select a task:')
-                            if command == '1':
-                                file = open(file="../sample-code/function/function.py", encoding="utf8").read()
-                                prompt = "Add comments to the following function. Return only the commented code.\n---\n" + file
-                                call_openai_model(prompt, model=azure_oai_model, client=client)
-                            elif command =='2':
-                                file = open(file="../sample-code/function/function.py", encoding="utf8").read()
-                                prompt = "Write four unit tests for the following function.\n---\n" + file
-                                call_openai_model(prompt, model=azure_oai_model, client=client)
-                            elif command =='3':
-                                file = open(file="../sample-code/go-fish/go-fish.py", encoding="utf8").read()
-                                prompt = "Fix the code below for an app to play Go Fish with the user. Return only the corrected code.\n---\n" + file
-                                call_openai_model(prompt, model=azure_oai_model, client=client)
-                            elif command.lower() == 'quit':
-                                print('Exiting program...')
-                                break
-                            else :
-                                print("Invalid input. Please try again.")
-                
-                    except Exception as ex:
-                        print(ex)
-                
-                def call_openai_model(prompt, model, client):
-                    # Provide a basic user message, and use the prompt content as the user message
-                    system_message = "You are a helpful AI assistant that helps programmers write code."
-                    user_message = prompt
-                
-                    # Format and send the request to the model
-                    # Build the messages array
-                    messages =[
+                # Configure the Azure OpenAI client
+                # Set OpenAI configuration settings
+                client = AzureOpenAI(
+                    azure_endpoint = azure_oai_endpoint, 
+                    api_key=azure_oai_key,  
+                    api_version="2023-05-15"
+                    )
+        
+                while True:
+                    print('\n1: Add comments to my function\n' +
+                        '2: Write unit tests for my function\n' +
+                        '3: Fix my Go Fish game\n' +
+                        '\"quit\" to exit the program\n')
+                    command = input('Enter a number to select a task:')
+                    if command == '1':
+                        file = open(file="../sample-code/function/function.py", encoding="utf8").read()
+                        prompt = "Add comments to the following function. Return only the commented code.\n---\n" + file
+                        call_openai_model(prompt, model=azure_oai_model, client=client)
+                    elif command =='2':
+                        file = open(file="../sample-code/function/function.py", encoding="utf8").read()
+                        prompt = "Write four unit tests for the following function.\n---\n" + file
+                        call_openai_model(prompt, model=azure_oai_model, client=client)
+                    elif command =='3':
+                        file = open(file="../sample-code/go-fish/go-fish.py", encoding="utf8").read()
+                        prompt = "Fix the code below for an app to play Go Fish with the user. Return only the corrected code.\n---\n" + file
+                        call_openai_model(prompt, model=azure_oai_model, client=client)
+                    elif command.lower() == 'quit':
+                        print('Exiting program...')
+                        break
+                    else :
+                        print("Invalid input. Please try again.")
+        
+            except Exception as ex:
+                print(ex)
+        
+        def call_openai_model(prompt, model, client):
+            # Provide a basic user message, and use the prompt content as the user message
+            system_message = "You are a helpful AI assistant that helps programmers write code."
+            user_message = prompt
+        
+            # Format and send the request to the model
+            # Build the messages array
+            messages =[
                     {"role": "system", "content": system_message},
                     {"role": "user", "content": user_message},
-                    ]
+            ]
                 
-                    # Call the Azure OpenAI model
-                    response = client.chat.completions.create(
+            # Call the Azure OpenAI model
+            response = client.chat.completions.create(
                     model=model,
                     messages=messages,
                     temperature=0.7,
                     max_tokens=1000
-                    )
-                    
-                    # Print the response to the console, if desired
-                    if printFullResponse:
-                        print(response)
-                
-                    # Write the response to a file
-                    results_file = open(file="result/app.txt", mode="w", encoding="utf8")
-                    results_file.write(response.choices[0].message.content)
-                    print("\nResponse written to result/app.txt\n\n")
-                
-                if __name__ == '__main__': 
-                    main()
+            )
+            
+            # Print the response to the console, if desired
+            if printFullResponse:
+                print(response)
+        
+            # Write the response to a file
+            results_file = open(file="result/app.txt", mode="w", encoding="utf8")
+            results_file.write(response.choices[0].message.content)
+            print("\nResponse written to result/app.txt\n\n")
+        
+        if __name__ == '__main__': 
+            main()
+          
    ```
 10. To save the changes made to the file, right-click on the file from the left pane, and hit **Save**
 
@@ -474,4 +478,4 @@ If you would like to see the full response from Azure OpenAI, you can set the `p
 In this lab, you have accomplished the following:
 -   Use the functionalites of the Azure OpenAI to generate and improvise code for your production applications.
 
-### You have successfully completed the lab.
+## Proceed to Exercise 4c

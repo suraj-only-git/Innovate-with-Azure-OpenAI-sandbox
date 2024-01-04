@@ -51,7 +51,7 @@ Next, add your data in the chat playground to see how it responds with your data
    
    ![](media/cors.png "Create storage account")
 
-1. Select **Create a new Azure Cognitive Search resource** with the following settings. Anything not specified leave as the default.
+1. Select **Create a new Azure AI Search resource** with the following settings. Anything not specified leave as the default.
 
     - **Subscription**: Default - Pre-assigned subscription (1)
     - **Resource group**: OpenAI (2)
@@ -65,7 +65,7 @@ Next, add your data in the chat playground to see how it responds with your data
 1. Under the **Select Azure AI Search resource** select **cognitive-search-service-<inject key="Deployment ID" enableCopy="false"></inject>**.
 
 1. Specify the following details and hit **Next**
-    - **Enter the index name**: **cognitive-search-index**
+    - Enter the index name: **cognitive-search-index**
     - **Add vector search to this search resource**: unchecked
     - **I acknowledge that connecting to an Azure Cognitive Search account will incur usage to my account**: checked
 
