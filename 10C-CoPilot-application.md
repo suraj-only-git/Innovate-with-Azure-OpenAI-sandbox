@@ -26,7 +26,7 @@
 
    - `API_KEY`: The `API key` for Azure OpenAI or OpenAI.
    - `AZURE_OPENAI_ENDPOINT`: The Azure OpenAI resource `Endpoint` address. Omit `-Endpoint` if using OpenAI.
-   - `{CompletionModel_NAME}`: Deployment name of the `gpt-35-turbo` model.
+   - `{CompletionModel_NAME}`: Deployment name of the `gpt-35-turbo-16k` model.
    - `{EmbeddingModel_NAME}`:  Deployment name of the `text-embedding-ada-002` model.
    - Execution will take 2 to 3 minutes.
 

@@ -35,10 +35,10 @@ In this lab, you will perform:
    | **Variables**                            | **Values**                                                                              |
    | ---------------------------------------- |-----------------------------------------------------------------------------------------|
    | OPENAI_API_TYPE                          |  **azure**                                                                              |
-   | OPENAI_API_KEY                           | Replace the value with the **AZURE OPENAI API KEY** which you noted in Task 2 step 3    |
-   | OPENAI_API_BASE                          | Replace the value with the **AZURE OPENAI ENDPOINT** which you noted in Task 2 step 3   |
-   | OPENAI_COMPLETION_MODEL                  | **gpt-35-turbo**                                                                        |
-   | AZURE_OPENAI_COMPLETION_DEPLOYMENT_NAME  | **gpt-35-turbo**                                                                        |
+   | OPENAI_API_KEY                           | Replace the value with the **AZURE OPENAI API KEY** which you noted in Exercise 4A Task 1 step 2  |
+   | OPENAI_API_BASE                          | Replace the value with the **AZURE OPENAI ENDPOINT** which you noted in Exercise 4A Task 1 step 2   |
+   | OPENAI_COMPLETION_MODEL                  | **gpt-35-turbo-16k**                                                                        |
+   | AZURE_OPENAI_COMPLETION_DEPLOYMENT_NAME  | **gpt-35-turbo-16k**                                                                        |
    | AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME   | **text-embedding-ada-002**                                                              |
 
       ![](media/updateenv.png "Deploy model configurations")
