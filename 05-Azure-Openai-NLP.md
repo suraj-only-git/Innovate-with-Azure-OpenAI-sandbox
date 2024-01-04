@@ -1,19 +1,17 @@
 # Exercise 5: Azure OpenAI + NLP using ChatGPT on SQL Engine
 
+This exercise illuminates the path of setting up an Azure Function/Web App, fortifying API keys, and seamlessly integrating ChatGPT to effortlessly transform user queries into powerful SQL commands for advanced data analysis. 
+
 ## Lab scenario
+Contoso aims to enhance its analytics capabilities by integrating Azure SQL Database with OpenAI's ChatGPT for natural language processing. In this lab, Contoso's team will set up an Azure Function/Web App, securely manage API keys, and utilize ChatGPT to convert user queries into SQL, executing advanced analytics on the Azure SQL Database.
 
-Leverage Azure SQL Database alongside OpenAI ChatGPT for a streamlined NLP application. Set up an Azure Function/Web App to manage SQL interactions, secure API keys from OpenAI, and integrate ChatGPT for natural language understanding. Convert user queries into SQL, execute against Azure SQL Database, and handle results. Emphasize robust security practices for handling sensitive data, conduct thorough testing, iterate for precision, and adhere to terms and pricing. Stay current with Azure and OpenAI documentation for any updates or modifications.
+## Lab objectives
+In this lab, you will complete the following:
 
-### Lab objectives
-In this lab, you will complete the following tasks:
-
-- Exercise 1: Open AI Setup and Installation of Application
-   - Task 1: Review Open AI resource
-   - Task 2: Deploy the application to Azure
-- Exercise 2: Quick Start With Hosted Demo Application.
-   - Task 1: Analyzing Data Analysis Assistant and SQL Query Writing Assistant
-
-## Overview
+- Open AI Setup and Installation of Application  
+- Quick Start With Hosted Demo Application.
+   
+## Overview of the application
 This application demonstrates the of Open AI (ChatGPT/GPT-4) to help answer business questions by performing advanced data analytic tasks on a business database. Examples of questions are:
 
  * Simple: Show me daily revenue trends in 2016 per region
@@ -26,7 +24,7 @@ The application supports Python's built-in SQLite as well as your own Microsoft 
 
 In this exercise, you will be setting up the Open AI resource and installation of the application to Azure.
 
-### Task 1: Review Open AI resource
+## Task 1: Review Open AI resource
 
 1. Naviagte back to [Azure portal](http://portal.azure.com/), search and select **Azure OpenAI**, from the **Azure AI Services | Azure OpenAI pane**, select the **OpenAI-<inject key="Deployment ID" enableCopy="false"/>**.
 
@@ -34,7 +32,7 @@ In this exercise, you will be setting up the Open AI resource and installation o
 
    ![](media/update4.png)
       
-### Task 2: Deploy the application to Azure
+## Task 2: Deploy the application to Azure
 
 1. In the LabVM, open **File Explorer** naviagte to the `C:\LabFiles\OpenAIWorkshop-Automation\scenarios\incubations\automating_analytics` **(1)** path, right click on **app.py (2)**, and select **Open with Code (3)**. Take a look at the code to see how it works.
 
@@ -158,7 +156,12 @@ In this exercise, you will be setting up the Open AI resource and installation o
 
 10. The dropdown menu allows you to browse the rest of the **FAQs** by changing the Input value.
 
-## Summary
+## Review
 
-In this exercise, you have completed the OpenAI Setup and hosted a demo application to Azure. 
+In this exercise, you have accomplished the following:
+- Connected Azure SQL Database with ChatGPT for easier language processing.
+- Ensured strong security for API keys and data protection.
+
+## Proceed to Exercise 6
+  
    
