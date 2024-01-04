@@ -1,12 +1,16 @@
 # Exercise 9B: C# based notebooks to develop on Semantic Kernal
 
+In this exercise, you will be focusing on the seamless integration of Azure OpenAI into the development workflow using C#-based notebooks on the Semantic Kernel. 
+
+## Lab Scenario
+Contoso ensures a smooth transition to using C#-based notebooks, empowering their developers to create innovative solutions with the amalgamation of AI capabilities. This exercise equips Contoso with the tools to harness the potential of AI in traditional programming languages for enhanced productivity and creative exploration.
+
 ## Lab objectives
 
-In this lab, you will perform:
+In this lab, you will perform the following:
 
-- Provision an Azure OpenAI resource
-- Deploy a model
-- Set up the configuration for Integrating AI to run notebooks in Semantic Kernal.
+- Setup configuration for Integrating AI
+- Develop on Semantic Kernal
 
 ## Architecture Diagram
 
@@ -62,3 +66,10 @@ In this lab, you will perform:
    > **Note**: Make sure **.Net Interactive** is in ready State, If not please wait for 15 to 20 seconds.
 
       ![](media/SemanticKernel-firstshell.png)
+
+## Review
+In this lab you have accomplished the following:
+- Setup configuration for Integrating AI
+- Developed on Semantic Kernal
+
+## Proceed to Exercise 9c
