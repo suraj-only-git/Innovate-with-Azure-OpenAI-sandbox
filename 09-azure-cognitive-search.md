@@ -1,10 +1,13 @@
 # Exercise 8: Knowledge Mining with Azure Cognitive Search
 
-Unlock the potential of knowledge mining with Azure Cognitive Search. Seamlessly organize and extract insights from vast amounts of unstructured data. Leverage AI-powered capabilities to enrich content, enable powerful search experiences, and gain valuable business intelligence. Transform information into actionable knowledge with Azure Cognitive Search's advanced search and analytics features.
+In this exercise, you'll embark on a journey of knowledge mining using Azure Cognitive Search. Unleash the power of AI to organize, extract valuable insights, and transform unstructured data into actionable knowledge
+
+## Lab Scenario
+Contoso aims to enhance its customer experience and business intelligence capabilities through advanced knowledge mining. Leveraging Azure Cognitive Search and Azure OpenAI, Contoso plans to organize and extract valuable insights from vast amounts of unstructured data, including customer reviews, product descriptions, and industry reports.
 
 ## Lab objectives
 
-In this lab, you will perform:
+In this lab, you will perform the following:
 
 - Provision an Azure OpenAI resource
 - Deploy a model
@@ -15,7 +18,7 @@ In this lab, you will perform:
 
    ![](media/arc9.png)
 
-### Task 1: Provision an Azure AI services
+## Task 1: Provision an Azure AI services
 
 Before you can use Azure AI services, you must provision an Azure AI services resource in your Azure subscription.
 
@@ -31,7 +34,7 @@ Before you can use Azure AI services, you must provision an Azure AI services re
 
      ![](media/ai-search-key.png)
 
-### Task 2: Setup configuration for AI Orchestration
+## Task 2: Setup configuration for AI Orchestration
 
 1. Open **Visual Studio Code** from the Lab VM desktop by double-clicking on it.
 
@@ -61,7 +64,7 @@ Before you can use Azure AI services, you must provision an Azure AI services re
 
    ![](media/ai-env.png)
 
-### Task 3: AI Orchestration with Azure Cognitive Search
+## Task 3: AI Orchestration with Azure Cognitive Search
 
 In this task, we'll walk through using one of Azure's vector stores, Azure Cognitive Search.
 
@@ -121,6 +124,10 @@ In this task, we'll walk through using one of Azure's vector stores, Azure Cogni
 
       ![](media/sk-python-first.png)  
 
-### Review
+## Review
 
-In this lab, you have provisioned an Azure OpenAI resource, deployed a model, set up the configuration for AI Orchestration, and performed various tasks related to ACS.
+In this lab, you have accomplished the following:
+- Provisioned Azure AI services and deployed models for knowledge mining.
+- Effectively configured AI orchestration, enhancing search experiences with Azure Cognitive Search.
+
+## Proceed to Exercise 9a
