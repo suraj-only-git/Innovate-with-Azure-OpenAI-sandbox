@@ -1,7 +1,18 @@
 # Exercise 1: Getting Started with Azure OpenAI
 
-In this exercise, you will create a deployment and model in Azure OpenAI studio which you will be using in further exercises.
-   
+Welcome to Contoso Corporation's AI exploration lab! In this exercise, you'll embark on a journey to integrate Azure OpenAI into your workflow.
+
+## Lab Scenario
+ 
+ Contoso Corporation, an innovator in engineering practices, has embraced the dynamic duo of Microsoft Azure and OpenAI. In this exercise, you'll delve into creating a deployment and model using Azure OpenAI Studio.
+  
+## Lab Objective
+
+In this exercise, you will perform the following:
+- Deploy Azure OpenAI Model.
+- Deploy a model
+- Explore Azure AI Studio
+
 ## Task 1: Deploy Azure OpenAI Model.
 
 1. In the **Azure portal**, search for **OpenAI** and select **Azure OpenAI**.
@@ -110,9 +121,10 @@ You can deploy, manage, and explore models in your Azure OpenAI Service by using
 
 ## Review
 
-In this exercise you have completed the following tasks:
-- Task 1: Deploy Azure OpenAI Model
-- Task 2: Deploy a model
-- Task 3: Explore Azure AI Studio
+In this exercise, you accomplished the following:
+
+- Deployed an Azure OpenAI Model
+- Deployed multiple models with varying capabilities
+- Explored Azure AI Studio features for model management and experimentation
 
 ## Proceed to Exercise 2

@@ -2,7 +2,11 @@
 
 ## Overview
 
-OpenAI's powerful language models like GPT-3 through API calls with Azure services like Cognitive Services and Machine Learning. Prioritize data management, security, and scalability. Stay informed about updates from both Azure and OpenAI to continually enhance your application. Check official documentation for the latest information and guidance.
+Azure OpenAI, the dynamic collaboration between Microsoft Azure and OpenAI, is revolutionizing AI integration. With a focus on customization, organizations can fine-tune hyperparameters seamlessly using Python as the primary interface, ensuring precision for specific use cases. 
+
+The integration of OpenAI's DALL-E model showcases its creative potential, enabling the generation of diverse content in textual and visual domains. Addressing cybersecurity challenges, Azure OpenAI employs advanced natural language processing (NLP) and integrates ChatGPT on platforms like SQL Engine for enhanced data analysis. 
+
+The platform excels in personalization, leveraging organizational data and content filters to tailor user experiences. Powered by Azure AI Search, knowledge mining extracts valuable insights from vast datasets, contributing to informed decision-making and competitive advantages. Azure OpenAI emerges as a comprehensive and versatile force, positioning itself at the forefront of transformative advancements in artificial intelligence.
 
 ### Key features of Azure OpenAI
 
@@ -15,7 +19,7 @@ OpenAI's powerful language models like GPT-3 through API calls with Azure servic
 
 ## Sandbox Scenario
 
-Contoso Corporation revolutionized its engineering practices by synergizing Microsoft Azure and OpenAI. They tailored Azure OpenAI service hyperparameters, optimizing AI models for data analytics and task automation. The company programmatically harnessed Azure OpenAI's capabilities, utilizing Python to interact with APIs, generating and refining code. This extended to generating images with a DALL-E model, showcasing versatility in both text and visual domains. Contoso delved into natural language processing (NLP) by integrating ChatGPT on SQL Engine through Azure OpenAI, enhancing data analysis and insights extraction. Leveraging their own data and exploring content filters, Contoso personalized AI applications. They adopted knowledge mining with Azure Cognitive Search, extracting valuable insights from extensive datasets. Building their own Copilot, including a semantic kernel and deploying a Chat Copilot application, reflected Contoso's commitment to advanced, integrated AI-driven development practices.
+Contoso Corporation revolutionized its engineering practices by synergizing Microsoft Azure and OpenAI. They tailored Azure OpenAI service hyperparameters, optimizing AI models for data analytics and task automation. The company programmatically harnessed Azure OpenAI's capabilities, utilizing Python to interact with APIs, and generating and refining code. This extended to generating images with a DALL-E model, showcasing versatility in both text and visual domains. Contoso delved into natural language processing (NLP) by integrating ChatGPT on SQL Engine through Azure OpenAI, enhancing data analysis and insights extraction. Leveraging their own data and exploring content filters, Contoso personalized AI applications. They adopted knowledge mining with Azure Cognitive Search, extracting valuable insights from extensive datasets. Building their own Copilot, including a semantic kernel and deploying a Chat Copilot application, reflected Contoso's commitment to advanced, integrated AI-driven development practices.
 
 ## About the Sandbox
 
@@ -47,16 +51,18 @@ Using this environment, You'll be able to explore complete features and offering
 
 #### **Duration and Deletion of sandbox**:  
 
-- The sandbox environment will be active for **14 days/730** hours from the time of registration. 
-- The allowed uptime of the virtual machine is **40 hours**.
+- The sandbox environment will be active for **14 days/336** hours from the time of registration. 
+- The allowed uptime of the virtual machine is **40 hours**. It is recommended to deallocate the virtual machine when not in use.
+- The virtual machine is set up with a custom feature called Idle start/stop. This custom package will check the virtual machine's idleness every **2 hours/120 minutes**. If the virtual machine is left idle for over 2 hours, a pop-up window will appear, prompting you to respond. If you do not take action within 10 minutes, the virtual machine will shut down automatically.  This feature is enabled in virtual machines to optimize Azure costs.
+
 - The virtual machines will automatically **shut down** if not in use or if virtual machines are left idle. This feature is enabled in virtual machines to minimize the Azure spend.
-- when 100% of Azure credits are spent, the sandbox environment will get automatically deleted without any prior notification. To retain the environment for a longer period and to get the most out of the environment, please follow the best practices mentioned below.
+- When 100% of Azure credits are spent, the sandbox environment will get automatically deleted without any prior notification. To retain the environment for a longer period and to get the most out of the environment, please follow the best practices mentioned below.
 
 #### **Best practices**: 
 
 - **Resources usage**: Please stop the virtual machines and other resources when not in use to minimize the Azure spend.
 
-- **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription often in check the Azure spend so that environment for a longer duration of time.
+- **Azure Cost Analysis**: Maintain a practice of checking the Cost Analysis report of the assigned Azure subscription often in check the Azure spend so that the environment is for a longer duration of time.
 
 - **Alert notifications**: Make sure to check your registered email's inbox for any alert-related mails. Alerts give you can head start to keep your Azure spending in control and to plan out the remaining credits in the best way possible.
 

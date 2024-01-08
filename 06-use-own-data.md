@@ -1,14 +1,16 @@
 # Exercise 6: Use your own data with Azure OpenAI
+ 
+ In this exercise, you will experience the OpenAI model's tailored responses after grounding it in specific datasets, showcasing its adaptability to user-provided information.
 
 ## Lab scenario
-The Azure OpenAI Service enables you to use your own data with the intelligence of the underlying LLM. You can limit the model to only use your data for pertinent topics, or blend it with results from the pre-trained model.
+Contoso aims to leverage Azure OpenAI Service to integrate its proprietary travel data. By grounding the OpenAI models in their specific travel information, Contoso intends to provide personalized and detailed responses to customer queries about travel destinations, accommodations, and local attractions. The goal is to create a more tailored and engaging customer experience by combining the power of OpenAI 
 
 ## Lab objectives
 In this lab, you will complete the following tasks:
 
-- Task 1: Observe normal chat behavior without adding your own data
-- Task 2: Connect your data in the chat playground
-- Task 3: Chat with a model grounded in your data
+- Observe normal chat behavior without adding your own data
+- Connect your data in the chat playground
+- Chat with a model grounded in your data
 
 ## Architecture Diagram
 
@@ -51,7 +53,7 @@ Next, add your data in the chat playground to see how it responds with your data
    
    ![](media/cors.png "Create storage account")
 
-1. Select **Create a new Azure Cognitive Search resource** with the following settings. Anything not specified leave as the default.
+1. Select **Create a new Azure AI Search resource** with the following settings. Anything not specified leave as the default.
 
     - **Subscription**: Default - Pre-assigned subscription (1)
     - **Resource group**: OpenAI (2)
@@ -65,7 +67,7 @@ Next, add your data in the chat playground to see how it responds with your data
 1. Under the **Select Azure AI Search resource** select **cognitive-search-service-<inject key="Deployment ID" enableCopy="false"></inject>**.
 
 1. Specify the following details and hit **Next**
-    - **Enter the index name**: **cognitive-search-index**
+    - Enter the index name: **cognitive-search-index**
     - **Add vector search to this search resource**: unchecked
     - **I acknowledge that connecting to an Azure Cognitive Search account will incur usage to my account**: checked
 
@@ -106,6 +108,8 @@ Try asking it about other cities included in the grounding data, which are Dubai
 ## Review
 
 In this lab, you have accomplished the following:
--   Use the power of OpenAI models to generate responses limited to custom ingested data.
+- Explored the default behavior of Azure OpenAI model in the Chat playground.
+- Integrated custom data into the model to observe enhanced responses.
+- Examined the model's adaptability and tailored outputs showcasing personalized responses.
 
 ## Proceed to Exercise 7

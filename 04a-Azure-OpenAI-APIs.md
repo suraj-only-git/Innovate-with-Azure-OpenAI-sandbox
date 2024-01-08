@@ -1,14 +1,18 @@
 # Exercise 4A: Interacting with Azure OpenAI APIs with Python
 
-Discover the power of Azure OpenAI APIs by seamlessly integrating them into your Python projects. Leverage cutting-edge natural language processing and machine learning capabilities to enhance your applications. Unlock a new realm of possibilities for text generation, language understanding, and more, all within the Azure ecosystem.
+In this exercise, you will unleash the potential of Azure OpenAI APIs in Python projects, tapping into advanced language processing and machine learning
+
+## Lab Scenario
+
+Contoso seeks to set up the necessary configurations for integrating AI into their Python projects. In this exercise, we will learn how to utilize  the OpenAI Python library for enhanced interaction with Azure OpenAI API. 
 
 ## Lab objectives
 
-In this lab, you will perform:
+In this lab, you will perform the following:
 
-- Provision an Azure OpenAI resource
-- Deploy a model
-- Set up the configuration for Integrating AI to run notebooks in Azure OpenAI API, and OpenAI Packages.
+- Fetch the OpenAI Key and Endpoint Values
+- Setup configuration for Integrating AI
+- Interact with Azure OpenAI API service endpoint
 
 ## Architecture Diagram
 
@@ -99,6 +103,8 @@ In this task, we'll show how to interact with the Azure OpenAI API using the Ope
 
       ![](media/openai-02-firstshell.png)
 
-### Review
+## Review
 
 In this lab, you have provisioned an Azure OpenAI resource, deployed a model, and set up configuration for integrating AI to run notebooks in Azure OpenAI API, OpenAI Packages.
+
+## Proceed to Exercise 4b
