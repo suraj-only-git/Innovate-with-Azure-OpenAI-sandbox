@@ -64,6 +64,12 @@ Before you can use Azure AI services, you must provision an Azure AI services re
 
    ![](media/ai-env.png)
 
+ > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+
 ## Task 3: AI Orchestration with Azure Cognitive Search
 
 In this task, we'll walk through using one of Azure's vector stores, Azure Cognitive Search.
@@ -129,5 +135,11 @@ In this task, we'll walk through using one of Azure's vector stores, Azure Cogni
 In this lab, you have accomplished the following:
 - Provisioned Azure AI services and deployed models for knowledge mining.
 - Effectively configured AI orchestration, enhancing search experiences with Azure Cognitive Search.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
+  > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
 ## Proceed to Exercise 9a
