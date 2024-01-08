@@ -108,7 +108,7 @@ The application supports Python's built-in SQLite as well as your own Microsoft 
 
 1. When you're on the **Natural Language Query** page, click on **Settings (1)** from the left side menu. Enter **ChatGPT deployment name** as **gpt-35-turbo-16k(2)**, enter **GPT-4 deployment name** as **gpt-35-turbo-16k (3)**, enter **Azure OpenAI Endpoint** as **Endpoint (4)** which you have saved in previous task, and **Azure OpenAI Key** as **Key (5)** which you have saved in previous task have all been filled in. Click on **Submit(6)** to save the changes.
 
-    ![](media/nl-set-credential.png "Natural Language Query")
+    ![](media/img0010.png "Natural Language Query")
 
 2. On the Natural Language Query page, select **SQL Query Writing Assistant (1)** from the left-side menu, from the **GPT model**, select **ChatGPT (2)**,  change the **FAQs** from the drop-down menu to select **Show me revenue by-product in ascending order (3)**, and and click on **Submit (4)**. According to the query, the **Output (5)** will be displayed. 
 
