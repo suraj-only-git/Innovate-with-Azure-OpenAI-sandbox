@@ -133,7 +133,7 @@ The application supports Python's built-in SQLite as well as your own Microsoft 
 
     ![](media/nl-03.png "Natural Language Query")
 
-5. The dropdown menu allows you to browse the rest of the **FAQs** by changing the Input value.
+5. The App service deployment slots can be **deleted** or **paused** to optimize the costs.
 
 ## Review
 
