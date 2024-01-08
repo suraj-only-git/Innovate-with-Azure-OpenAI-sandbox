@@ -114,7 +114,7 @@ In this exercise, you will be setting up the Open AI resource and installation o
 
 ## Task 1: Analyzing Data Analysis Assistant and SQL Query Writing Assistant
 
-1. When you're on the **Natural Language Query** page, click on **Settings (1)** from the left side menu. Enter **ChatGPT deployment name** as **sql-chatgpt-model (2)**, enter **GPT-4 deployment name** as **sql-chatgpt-model (3)**, enter **Azure OpenAI Endpoint** as **Endpoint (4)** which you have saved in previous task, and **Azure OpenAI Key** as **Key (5)** which you have saved in previous task have all been filled in. Click on **Submit(6)** to save the changes.
+1. When you're on the **Natural Language Query** page, click on **Settings (1)** from the left side menu. Enter **ChatGPT deployment name** as **gpt-35-turbo-16k(2)**, enter **GPT-4 deployment name** as **gpt-35-turbo-16k (3)**, enter **Azure OpenAI Endpoint** as **Endpoint (4)** which you have saved in previous task, and **Azure OpenAI Key** as **Key (5)** which you have saved in previous task have all been filled in. Click on **Submit(6)** to save the changes.
 
     ![](media/nl-set-credential.png "Natural Language Query")
 
