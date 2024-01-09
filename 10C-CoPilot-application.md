@@ -56,7 +56,7 @@ In this exercise, you will perform the following:
 1. Open another tab in **Edge**, in the browser window paste the following link, you should see a confirmation message: `Healthy`.
 
    ```powershell
-   https://localhost:40443/healthz
+   http://localhost:40443/healthz
    ```
   
    > **Note:** Don't close the powershell window keep it running up.
