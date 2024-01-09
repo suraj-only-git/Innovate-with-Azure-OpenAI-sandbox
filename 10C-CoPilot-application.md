@@ -11,6 +11,10 @@ In this exercise, you will perform the following:
 - Deploy a Chat CoPilot application using Semantic Kernel.
 - Configure both backend and frontend components for a collaborative coding environment.
 
+## Architecture Diagram
+
+   ![](media/arc10c.PNG)
+
 ## Task 1: Deployment of Chat CoPilot application
 
 1. In the LabVM, click on **Start**, from the start menu search and select for **PowerShell 7**. 
@@ -89,11 +93,11 @@ In this exercise, you will perform the following:
 
       ![](media/resultcopilot.png)
 
- > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+      > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
+      > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+      > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
 
 ## Review
 In this exercise you have accomplished the following:
