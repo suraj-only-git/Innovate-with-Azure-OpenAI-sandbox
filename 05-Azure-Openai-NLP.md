@@ -10,6 +10,10 @@ In this lab, you will complete the following:
 
 - Open AI Setup and Installation of Application  
 - Quick Start With Hosted Demo Application.
+
+## Architecture Diagram
+
+   ![](media/arc05.PNG)
    
 ## Overview of the application
 This application demonstrates the of Open AI (ChatGPT/GPT-4) to help answer business questions by performing advanced data analytic tasks on a business database. Examples of questions are:
